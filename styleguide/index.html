@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CRUSH</title>
+
+    <link rel="stylesheet" href="css/flexbox.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+
+  <body>
+    <header>
+      <!-- HEADER -->
+      <div id="title">
+        <h1>Crush</h1>
+        <h2> Style Guide </h2>
+        <nav id="nav-style">
+          <ul>
+            <li><a href="#interactive_elements">Interactive Elements</a>
+            <a href="#text_styling">Text Styling</a>
+            <a href="#combined_elements">Combined Elements</a></li>
+          </ul>
+          <ul>
+            <li> <a href="wireframes.html">Wireframes</a>
+            <a href="citations.html">Citations</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class= "body_elements">
+
+    <!-- INTERACTIVE ELEMENTS SECTION -->
+      <section id="interactive_elements">
+        <h1>Interactive Elements</h1>
+
+        <!-- IN-TEXT LINK SECTION -->
+        <section>
+          <h2>In-text Link</h2>
+            <p>Crush showcases a collection of photography work done by female artists&period;
+              It buys and sells pieces from female <a href="#" class= "hyperlink">photographers</a>&period;</p>
+          <h3>Sample Code&colon;</h3>
+            <pre>
+              <code>
+                &lt;a href&equals;"&num;" class&equals; "hyperlink"&gt;photographers&lt;&sol;a&gt;
+
+                a&comma; a&colon;visited &period;hyperlink&lcub;
+                  text&hyphen;decoration&colon; underline&semi;
+                  color&colon; &num;5E5EFC&semi;
+                &rcub;
+                a&colon;hover&comma; a&colon;active &period;hyperlink&lcub;
+                  color&colon; white&semi;
+                &rcub;
+             </code>
+           </pre>
+          <h4>Css Selector&colon; &period;hyperlink</h4>
+        </section>
+
+        <!-- NAVIGATION BUTTON STYLE SECTION -->
+        <section>
+          <h2>Navigation Button Style</h2>
+            <nav class= "nav-button">
+                <a href="#">Button</a>
+            </nav>
+          <h3>Sample Code&colon;</h3>
+          <pre>
+            <code>
+              &lt;nav class&equals;&quot;nav&hyphen;button&quot;&gt;
+                &lt;a href&equals;&quot;&num;&quot;&gt;Button&lt;&sol;a&gt;
+
+              section nav a&comma; nav a&colon;visited &period;nav&hyphen;button&lcub;
+                color&colon; &num;FF9966;&semi;
+                text&hyphen;decoration&colon; underline&semi;
+                text&hyphen;transform&colon; lowercase&semi;
+                font&hyphen;weight&colon;600&semi;
+                letter&hyphen;spacing&colon;0&period;2rem&semi;
+                font&hyphen;size&colon;&period;8rem&semi;
+                padding&colon;0&period;5rem&semi;
+              &rcub;
+              section nav a&colon;hover&comma; nav a&colon;active &period;nav&hyphen;button&lcub;
+                color&colon; white&semi;
+              &rcub;
+            </code>
+          </pre>
+          <h4>Css Selector&colon; &period;nav&hyphen;button</h4>
+        </section>
+
+        <!-- SUBMIT/RESET BUTTONS SECTION -->
+        <section>
+          <h2>Submit/Reset Buttons</h2>
+            <button id= "submit">Submit</button>
+            <button id= "add-cart">Add to Cart</button>
+            <button id= "reset">Reset</button>
+          <h3> Sample Code&colon;</h3>
+          <pre>
+            <code>
+              &lt;button id&equals; &quot;submit&quot;&gt;Submit&lt;&sol;button&gt;
+              &lt;button id&equals; &quot;add&hyphen;cart&quot;&gt;Add to Cart&lt;&sol;button&gt;
+              &lt;button id&equals; &quot;reset&quot;&gt;Reset&lt;&sol;button&gt;
+
+              section button&comma; button&colon;visited&lcub;
+                text&hyphen;align&colon; center&semi;
+                color&colon; #FF9966&semi;
+                text&hyphen;transform&colon;uppercase&semi;
+                font&hyphen;size&colon;1rem&semi;
+                letter&hyphen;spacing&colon; 0&period;05rem&semi;
+                box&hyphen;sizing&colon; border&hyphen;box&semi;
+                box&hyphen;shadow&colon;  0&period;1rem 0&period;2rem #CACFD2&semi;
+                border&colon; 0&period;2rem solid #FF9966&semi;
+                border&hyphen;radius&colon;1&period;2rem&semi;
+                padding&colon;0&period;8rem&semi;
+                width&colon; 15rem&semi;
+              &rcub;
+
+              section button&colon;active&comma; button&colon;hover&lcub;
+                text-align&colon; center&semi;
+                color&colon; gray&semi;
+                text-transform&colon;uppercase&semi;
+                font-size&colon;1rem&semi;
+                letter-spacing&colon; 0&period;05rem&semi;
+                box-sizing&colon; border-box&semi;
+                box-shadow&colon;  0&period;1rem 0&period;2rem gray&semi;
+                border&colon; 0&period;2rem solid gray&semi;
+                border-radius&colon;1&period;2rem&semi;
+                padding&colon;0&period;8rem&semi;
+                width&colon; 15rem&semi;
+              &rcub;
+            </code>
+          </pre>
+          <h4> Css Selector&colon; button &period;submit&comma; button &period;add&hyphen;cart&comma; button &period;reset </h4>
+        </section>
+
+        <!-- TEXT INPUT FIELD SECTION -->
+        <section>
+          <h2>Text Input Field</h2>
+            <form>
+              <input type="text" class = "input-field" name="label" placeholder="Address">
+            </form>
+          <h3> Sample Code&colon; </h3>
+          <pre>
+            <code>
+              &lt;input type&equals;&quot;text&quot; input class &equals; &quot;input-field&quot;
+              name&equals;&quot;label&quot; placeholder&equals;&quot;Address&quot;&gt;
+
+              &period;input&hyphen;field&lsqb;type=text&rsqb; &lcub;
+                text&hyphen;align&colon; center&semi;
+                letter&hyphen;spacing&colon; 0&period;05rem&semi;
+                text&hyphen;transform&colon;uppercase&semi;
+                box&hyphen;sizing&colon; border&hyphen;box&semi;
+                border&colon; 0&period;2rem solid #FF9966&semi;
+                border&hyphen;radius&colon; 0&period;5rem&semi;
+                font&hyphen;size&colon; 1rem&semi;
+                background&hyphen;color&colon; #FFFDFB&semi;
+                padding&colon; 0&period;8rem&semi;
+                width&colon; 50rem&semi;
+              &rcub;
+            </code>
+          </pre>
+          <h4> Css Selector&colon; &period;input-field </h4>
+        </section>
+
+      </section>
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+      <section id="text_styling">
+        <h1>Text Styling</h1>
+
+        <!--HEADINGS SECTION-->
+        <section>
+          <h2>Headings</h2>
+          <!--HEADING 1  SECTION-->
+          <section id="heading1">
+            <h1>A Day by the Beach</h1>
+            <p> Heading 1<p>
+            <h3>Sample Code </h3>
+            <pre>
+              <code>
+                &lt;h1&gt;A Day by the Beach&lt;&sol;h1&gt;
+
+                &period;headingone&lcub;
+                  letter&hyphen;spacing&colon; 0&period;05rem&semi;
+                  color&colon; &num;5E5EFC&semi;
+                  font&hyphen;size&colon;2rem&semi;
+                  padding&hyphen;bottom&colon;1rem&semi;
+                &rcub;
+              </code>
+            </pre>
+            <h4>Css Selector&colon; h1</h4>
+          </section>
+
+          <!--HEADING 2  SECTION-->
+          <section id="heading2">
+            <h2>Frances Wulf</h2>
+            <p>Heading 2</p>
+            <h3>Sample Code&colon;</h3>
+            <pre>
+              <code>
+                &lt;h2&gt;Frances Wulf&lt;&sol;h2&gt;
+
+                h2&lcub;
+                  text&hyphen;transform&colon; lowercase&semi;
+                  letter&hyphen;spacing&colon; 0.05rem&semi;
+                  color&colon; black;&semi;
+                  font&hyphen;size&colon;2rem&semi;
+                &rcub;
+              </code>
+            </pre>
+            <h4>Css Selector&colon; h2</h4>
+          </section>
+
+          <!--HEADING 3  SECTION-->
+          <section id="heading3">
+            <h3>Artist Biography</h3>
+            <p>Heading 3</p>
+            <h3>Sample Code&colon;</h3>
+            <pre>
+              <code>
+                &lt;h3&gt;Artist Biography&lt;&sol;h3&gt;
+
+                h3&lcub;
+                    text&hyphen;transform&colon; uppercase&semi;
+                    font&hyphen;size&colon; 1rem&semi;
+                    letter&hyphen;spacing&colon;  0&period;05rem&semi;
+                &rcub;
+              </code>
+            </pre>
+            <h4>Css Selector&colon; h3</h4>
+          </section>
+
+        </section>
+
+        <!--PARAGRAPH SECTION-->
+        <section>
+          <h2>Paragraph</h2>
+          <p> &quot;A Day at the Beach&quot;&comma; photographed by Frances Wulf&comma; is a complex piece illustrating the struggles of
+            lorem ipsum dolor sit amet&comma; consectetur adipiscing elit&period; Sed tincidunt urna ut magna imperdiet&comma; ut blandit
+            est tempus&period; Duis volutpat&comma; magna blandit ullamcorper dignissim, sem dui laoreet tellus&comma; in feugiat enim lacus eu nulla&period;
+          </p>
+          <h3> Sample Code&colon; </h3>
+          <pre>
+            <code>
+              &lt;p&gt;paragraph&lt;&sol;p&gt;
+
+              p&lcub;
+                font&hyphen;size&colon;1&period;5rem&semi;
+                letter&hyphen;spacing&colon;0&period;03rem&semi;
+                text&hyphen;align&colon;left&semi;
+                line&hyphen;height&colon;2&period;3rem&semi;
+              &rcub;
+            </code>
+          </pre>
+          <h4> Css Selector&colon; p</h4>
+        </section>
+
+        <!--BULLET LIST SECTION-->
+        <section>
+          <h2>Bulleted Lists</h2>
+            <ul class="bullet-list">
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+          <h3>Sample Code&colon;</h3>
+          <pre>
+            <code>
+              &lt;ul class&equals;&quot;bullet-list&quot;&gt;&lt;li&gt;Item 1&lt;&sol;li&gt;&lt;&sol;ul&gt;
+
+              &period;bullet&hyphen;list&lcub;
+                list&hyphen;style&hyphen;type&colon; circle&semi;
+                line&hyphen;height&colon; 2rem&semi;
+              &rcub;
+            </code>
+          </pre>
+          <h4>Css Selector&colon; &period;bullet&hyphen;list</h4>
+        </section>
+
+        <!--NUMBER LIST SECTION-->
+        <section>
+          <h2>Numbered Lists</h2>
+            <ul class="number-list">
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+          <h3>Sample Code&colon;</h3>
+          <pre>
+            <code>
+              &lt;ul class&equals;&quot;number&hyphen;list&quot;&gt;&lt;li&gt;&lt;&sol;li&gt;&lt;&sol;ul&gt;
+
+              &period;number&hyphen;list&lcub;
+                line&hyphen;height&colon;2rem&semi;
+                color&colon;&num;5E5EFC&semi;
+                list&hyphen;style&hyphen;type&colon;decimal&hyphen;leading&hyphen;zero&semi;
+              &rcub;
+            </code>
+          </pre>
+          <h4>Css Selector&colon; &period;number&hyphen;list</h4>
+        </section>
+
+      </section>
+
+
+
+    <!-- COMBINED ELEMENTS SECTION -->
+      <section id="combined_elements">
+        <h1> Combined Elements </h1>
+
+        <!--MAIN NAVIGATION SECTION-->
+        <section>
+          <h2>Main Navigation</h2>
+          <nav class= "nav-button container">
+              <a class="n1 block-nav" href="#">Button 1</a>
+              <a class="n2 block-nav" href="#">Button 2</a>
+              <a class="n3 block-nav" href="#">Button 3</a>
+              <a class="n4 block-nav" href="#">Button 4</a>
+              <a class="n5 block-nav" href="#">Button 5</a>
+          </nav>
+          <h3>Sample Code&colon;</h3>
+          <pre>
+            <code>
+              &lt;nav class&equals; &quot;nav&hyphen;button container&quot;&gt;
+                  &lt;a class&equals;&quot;n1 block&hyphen;nav&quot; href&equals;&quot;&num;&quot;&gt;Button 1&lt;&sol;a&gt;
+              &lt;&sol;nav&gt;
+
+              &period;container a&lcub;
+                padding&colon;2rem&semi;
+                height&colon;5rem&semi;
+              &rcub;
+            </code>
+          </pre>
+          <h4>CSS Selector&colon; &period;container a</h4>
+        </section>
+
+        <!--PRODUCT LISTING SECTION-->
+        <section>
+          <h2>Product Listing</h2>
+          <div class="container">
+            <ul>
+              <li>
+                <img src= "img/photo.jpg" alt="sunglasses" class="listing-image">
+                <h2>Laura Stephenson</h2>
+                <h4>$20</h4>
+              </li>
+            </ul>
+          </div>
+          <h3>Sample Code&colon;</h3>
+          <pre>
+            <code>
+              &lt;div class&equals;&quot;container&quot;&gt;
+                &lt;ul class&equals;&quot;bullet&hyphen;list&quot;&gt;
+                  &lt;li&gt;
+                    &lt;img src&equals;&quot;img&sol;photo&period;jpg&quot; alt&equals;&quot;sunglasses&quot; class&equals;&quot;listing&hyphen;image&quot;&gt;
+                    &lt;h2&gt;Laura Stephenson&lt;&sol;h2&gt;
+                    &lt;h4&gt;$20&lt;/h4&gt;
+                  &lt;&sol;li&gt;
+                &lt;&sol;ul&gt;
+              &lt;&sol;div&gt;
+            </code>
+          </pre>
+          <h4>CSS Selector&colon; &period;listing&hyphen;image</h4>
+      </section>
+
+        <!--GRID STRUCTURE SECTION-->
+        <section>
+          <h2>Grid Structure</h2>
+          <div class="container">
+            <p class="b1 block-grid">Column One</p>
+            <p class="b2 block-grid">Column Two</p>
+          </div>
+          <div class="container">
+            <p class="b3 block-grid">Column One</p>
+            <p class="b4 block-grid">Column Two</p>
+            <p class="b5 block-grid">Column Three</p>
+          </div>
+          <h3>Sample Code&colon;</h3>
+          <pre>
+            <code>
+              &lt;div class&equals;&quot;container&quot;&gt;
+                &lt;p class&equals;&quot;b1 block&hyphen;grid&quot;&gt;Column One&lt;&sol;p&gt;
+              &lt;&sol;div&gt;
+            </code>
+          </pre>
+          <h4>CSS Selector&colon; &period;container p</h4>
+        </section>
+
+        <!--COLOUR PALETTE SECTION-->
+        <section>
+          <h2>Colour Palette</h2>
+          <div class="container">
+            <p class="c1 block-swatch">#FFFFFF</p>
+            <p class="c2 block-swatch">#CACFD2</p>
+            <p class="c3 block-swatch">#5E5EFC</p>
+            <p class="c4 block-swatch">#FF9966</p>
+          </div>
+          <h3>Sample Code&colon;</h3>
+          <pre>
+            <code>
+              &lt;div class&equals;&quot;container&quot;&gt;
+                &lt;p class&equals;&quot;c1 block&hyphen;swatch&quot;&gt;&num;FFFFFF&lt;&sol;p&gt;
+              &lt;&sol;div&gt;
+            </code>
+          </pre>
+          <h4>CSS Selector&colon; &period;container p </h4>
+        </section>
+
+      </section>
+    </div>
+  </body>
+</html>
