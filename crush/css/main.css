@@ -120,12 +120,11 @@ h5 {
   text-decoration: underline;
 }
 
-<<<<<<< HEAD
-.shipping{
+.checkout-forms{
   float: left;
   padding-right: 8rem;
 }
-.shipping hr {
+/* .shipping hr {
    display: block;
    position: relative;
    height: 0;
@@ -133,20 +132,18 @@ h5 {
    border: none;
    border-bottom: 0.1rem solid #C5CEDD;
    margin-bottom:2rem;
-}
+} */
 
-.billing{
+/* .billing{
   float: left;
   padding-right: 8rem;
 }
 .billing hr {
-=======
-.checkout-forms{
+
   float: left;
   padding-right: 8rem;
-}
+} */
 .checkout-forms hr {
->>>>>>> Lena
    display: block;
    position: relative;
    height: 0;
@@ -183,11 +180,7 @@ h5 {
   border: 0.05rem solid #C5CEDD;
 }
 
-<<<<<<< HEAD
-.billing [type=checkbox]{
-=======
 [type=checkbox]{
->>>>>>> Lena
   letter-spacing: 0.05rem;
   background-color: #C5CEDD;
   height:1rem;
