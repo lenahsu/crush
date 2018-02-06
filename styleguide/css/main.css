@@ -84,7 +84,7 @@ section{
 h1{
   letter-spacing: 0.05rem;
   color: #5E5EFC;
-  font-size:2rem;
+  font-size:1.8rem;
   padding-bottom:1rem;
 }
 
@@ -92,7 +92,7 @@ h2{
   text-transform: lowercase;
   letter-spacing: 0.05rem;
   color: black;
-  font-size:2rem;
+  font-size:1.5rem;
 }
 
 h3{
