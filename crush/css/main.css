@@ -1,10 +1,14 @@
 header{
+  background-color: #C5CEDD;
   text-align: center;
   font-size: 2rem;
   color: white;
   letter-spacing: 0.4rem;
   margin:1rem;
   padding:1rem;
+  position: fixed;
+  width: 100%;
+  display: block;
 }
 nav{
   font-family: 'Lato', sans-serif;
@@ -12,13 +16,17 @@ nav{
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   color: white;
+  text-align: center;
 }
 
 nav li {
   list-style-type:none;
+  display: inline;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
-nav a, nav a:visited{
+nav a:link, nav a:visited{
   color: white;
   text-decoration: none;
 }
@@ -30,7 +38,6 @@ nav a:hover, nav a:active {
 
 nav h1{
   text-transform: capitalize;
-  text
 
 }
 
@@ -41,10 +48,9 @@ body{
 hr {
    display: block;
    position: relative;
-   padding: 0;
    margin: 1rem auto;
    height: 0;
-   width: 60%;
+   width: 50%;
    line-height: 0;
    border: none;
    border-bottom: 0.1rem solid #ffffff;
