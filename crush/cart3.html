@@ -1,4 +1,4 @@
-<!--Shipping-->
+<!--Payment-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -32,9 +32,9 @@
         <li>></li>
         <li><a href= "cart1.html">Shipping</a></li>
         <li> > </li>
-        <li>Billing</li>
+        <li><a href= "cart2.html">Billing</a></li>
         <li>></li>
-        <li>Payment</li>
+        <li><a href= "cart3.html">Payment</a></li>
         <li>></li>
         <li>Review</li>
         <li>></li>
@@ -45,20 +45,19 @@
       <div class = "checkout">
         <h2> Checkout </h2>
         <div class="checkout-forms">
-          <h5> 1. Shipping Information </h5>
+          <h5> 3. Payment Information </h5>
           <hr>
           <form>
-            <input type="text" name="label" placeholder="Email">
-            <input type="text" name="label" placeholder="First Name">
-            <input type="text" name="label" placeholder="Last Name">
-            <input type="text" name="label" placeholder="Address Line 1">
-            <input type="text" name="label" placeholder="Address Line 2">
-            <input type="text" name="label" placeholder="City/Town">
-            <input type="text" name="label" placeholder="Province">
-            <input type="text" name="label" placeholder="Postal Code">
+            <input type="checkbox" name="payment" value="Credit Card"> Credit Card
+            <input type="checkbox" name="payment" value="Debit Card"> Debit Card
+            <input type="checkbox" name="payment" value="Paypal"> Paypal
+            <input type="text" name="label" placeholder="Credit Card Number">
+            <input type="text" name="label" placeholder="Cardholder's Name">
+            <input type="text" name="label" placeholder="Expiry Date XX/XX">
+            <input type="text" name="label" placeholder="CVV XXX">
           </form>
 
-          <form action="cart2.html">
+          <form action="cart4.html">
             <input type="submit" value="Next">
           </form>
         </div>
