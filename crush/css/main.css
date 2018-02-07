@@ -1,129 +1,151 @@
-header{
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  background-color: #FDFAFB;
-  text-align: center;
-  font-size: 2rem;
-  color: #EE924D;
-  letter-spacing: 0.4rem;
-  margin:1rem;
-  padding:1rem;
-  position: fixed;
-  width: 100%;
-  display: block;
-  z-index:1200;
-}
-nav{
-  font-size: 1.20rem;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  color: #EE924D;
-  text-align: center;
+/*--------------------HEADER STYLE--------------------*/
+
+header {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+/*    background-color: #FDFAFB;*/
+    text-align: center;
+    font-size: 2rem;
+    color: #EE924D;
+    letter-spacing: 0.4rem;
+    margin: 1rem;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    display: block;
+    z-index: 1200;
 }
 
+/*--------------------FOOTER STYLE--------------------*/
+main{
+    position: relative;
+    padding-top: 16rem;
+}
+
+
+/*--------------------FOOTER STYLE--------------------*/
+
+footer {
+    display: flex;
+    bottom: 0;
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+    font-size: .75rem;
+    background-color: #C5CEDD;
+    width: 100%;
+    text-align: left;
+    padding: 3rem 3rem;
+    margin-top: 2rem;
+}
+
+/*--------------------NAV STYLE--------------------*/
+
+nav {
+    font-size: 1.20rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: #EE924D;
+    text-align: center;
+}
 nav li {
-  list-style-type:none;
-  display: inline;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+    list-style-type: none;
+    display: inline;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+nav a:link,
+nav a:visited {
+    color: #EE924D;
+    text-decoration: none;
+}
+nav a:hover,
+a:focus,
+nav a:active {
+    color: #EE924D;
+    text-decoration: underline;
+}
+nav h1 {
+    text-transform: capitalize;
+    font-weight: 900;
 }
 
-nav a:link, nav a:visited{
-  color: #EE924D;
-  text-decoration: none;
+/*--------------------BODY STYLE--------------------*/
+
+body {
+    background-color: #FDFAFB;
+    font-family: 'Open Sans', sans-serif;
 }
-
-nav a:hover, nav a:active {
-  color: #EE924D;
-  text-decoration: underline;
-}
-
-nav h1{
-  text-transform: capitalize;
-  font-weight:900;
-
-}
-
-body{
-  background-color:#FDFAFB;
-  font-family: 'Open Sans', sans-serif;
-}
-
 hr {
-   display: block;
-   position: relative;
-   margin: 1rem auto;
-   height: 0;
-   width: 60%;
-   line-height: 0;
-   border: none;
-   border-bottom: 0.1rem solid #EE924D;
+    display: block;
+    position: relative;
+    margin: 1rem auto;
+    height: 0;
+    width: 60%;
+    line-height: 0;
+    border: none;
+    border-bottom: 0.1rem solid #EE924D;
 }
-
 .body-elements {
-  position: absolute;
-  top: 20rem;
-  left: 30rem;
+    position: absolute;
+    top: 20rem;
+    left: 30rem;
 }
-
 h2 {
-  letter-spacing: 0.05rem;
-  color: black;
-  font-size:1.5rem;
-  padding-bottom:2rem;
-  font-weight: 400;
+    letter-spacing: 0.05rem;
+    color: black;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    font-weight: 400;
 }
-
 h3 {
     text-transform: lowercase;
     letter-spacing: 0.05rem;
     color: #EE924D;
     font-weight: 400;
-    font-size:2rem;
-  }
-
+    font-size: 2rem;
+}
 h4 {
-  text-transform: lowercase;
-  color: #C5CEDD;
-  font-size: 1.5rem;
+    text-transform: lowercase;
+    color: #C5CEDD;
+    font-size: 1.5rem;
+}
+h5 {
+    text-transform: uppercase;
+    color: #C5CEDD;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
 }
 
-h5 {
-  text-transform: uppercase;
-  color: #C5CEDD;
-  letter-spacing: 0.1rem;
-  font-size: 1rem;
-}
+/*--------------------CHECKOUT PROCESS STYLE--------------------*/
 
 .checkout-process ul li {
-  font-size:0.08rem;
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
-  list-style: none;
-  display: inline;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  color: #C5CEDD;
-  position: relative;
-  top: 17rem;
-  left: 40rem;
-
+    font-size: 0.08rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    list-style: none;
+    display: inline;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: #C5CEDD;
+    position: relative;
+    top: 17rem;
+    left: 40rem;
+}
+.checkout-process a:link,
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+.checkout-process a:hover,
+a:active {
+    color: black;
+    text-decoration: underline;
+}
+.checkout-forms {
+    float: left;
+    padding-right: 8rem;
 }
 
-.checkout-process a:link, a:visited{
-  color: black;
-  text-decoration: none;
-}
-
-.checkout-process a:hover, a:active{
-  color: black;
-  text-decoration: underline;
-}
-
-.checkout-forms{
-  float: left;
-  padding-right: 8rem;
-}
 /* .shipping hr {
    display: block;
    position: relative;
@@ -134,6 +156,7 @@ h5 {
    margin-bottom:2rem;
 } */
 
+
 /* .billing{
   float: left;
   padding-right: 8rem;
@@ -143,65 +166,61 @@ h5 {
   float: left;
   padding-right: 8rem;
 } */
+
 .checkout-forms hr {
-   display: block;
-   position: relative;
-   height: 0;
-   width: 45rem;
-   border: none;
-   border-bottom: 0.1rem solid #C5CEDD;
-   margin-bottom:2rem;
+    display: block;
+    position: relative;
+    height: 0;
+    width: 45rem;
+    border: none;
+    border-bottom: 0.1rem solid #C5CEDD;
+    margin-bottom: 2rem;
 }
-
 .checkout [type=text] {
-  text-align: center;
-  letter-spacing: 0.05rem;
-  text-transform:uppercase;
-  font-size: 0.08rem;
-  background-color: #C5CEDD;
-  opacity:0.5;
-  width: 30rem;
-  padding: 0.8rem;
-  margin:1rem;
-  display: block;
-  border: none;
+    text-align: center;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    font-size: 0.08rem;
+    background-color: #C5CEDD;
+    opacity: 0.5;
+    width: 30rem;
+    padding: 0.8rem;
+    margin: 1rem;
+    display: block;
+    border: none;
 }
-
-[type=submit]{
-  text-align: center;
-  letter-spacing: 0.05rem;
-  text-transform:uppercase;
-  font-size: 0.08rem;
-  background-color: white;
-  width: 15rem;
-  padding: 0.8rem;
-  margin-top:4rem;
-  display: block;
-  border: 0.05rem solid #C5CEDD;
+[type=submit] {
+    text-align: center;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    font-size: 0.08rem;
+    background-color: white;
+    width: 15rem;
+    padding: 0.8rem;
+    margin-top: 4rem;
+    display: block;
+    border: 0.05rem solid #C5CEDD;
 }
-
-[type=checkbox]{
-  letter-spacing: 0.05rem;
-  background-color: #C5CEDD;
-  height:1rem;
-  width:1rem;
-  margin: 1rem;
+[type=checkbox] {
+    letter-spacing: 0.05rem;
+    background-color: #C5CEDD;
+    height: 1rem;
+    width: 1rem;
+    margin: 1rem;
 }
-
 form {
-  letter-spacing: 0.05rem;
-  text-transform:uppercase;
-  font-size: 0.08rem;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    font-size: 0.08rem;
 }
-
-.order{
-  float: right;
+.order {
+    float: right;
 }
 .order hr {
-   display: block;
-   position: relative;
-   height: 0;
-   width: 25rem;
-   border: none;
-   border-bottom: 0.1rem solid #C5CEDD;
+    display: block;
+    position: relative;
+    height: 0;
+    width: 25rem;
+    border: none;
+    border-bottom: 0.1rem solid #C5CEDD;
 }

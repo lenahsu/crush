@@ -1,0 +1,58 @@
+/*-------------------- GRID SYSTEM--------------------*/
+
+@media (max-width: 600px) {
+  .flex-grid-three {
+    display: block;
+    }
+    .col {
+      width: 100%;
+  }
+}
+
+/*--------------1 COLUMN GRID--------------*/
+
+.flex-grid-one {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+.flex-grid-one .col {
+    width: 97%;
+    background: #ccc;
+}
+
+/*--------------2 COLUMN GRID--------------*/
+
+.flex-grid-two {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+.flex-grid-two .col {
+    width: 46.5%;
+    background: #ccc;
+}
+
+/*--------------3 COLUMN GRID--------------*/
+
+.flex-grid-three {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+.flex-grid-three .col {
+    width: 30%;
+    background: #ccc;
+}
+
+/*--------------4 COLUMN GRID--------------*/
+
+.flex-grid-four {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+.flex-grid-four .col {
+    width: 21.5%;
+    background: #ccc;
+}
