@@ -1,3 +1,4 @@
+/*--------------------HEADER STYLE--------------------*/
 header{
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -13,6 +14,21 @@ header{
   display: block;
   z-index:1200;
 }
+
+/*--------------------FOOTER STYLE--------------------*/
+footer{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-copyright{
+    font-family: 'Lato', sans-serif;
+    font-size: .75rem;
+    text-align: center;
+}
+
+/*--------------------NAV STYLE--------------------*/
 nav{
   font-size: 1.20rem;
   text-transform: uppercase;
@@ -33,7 +49,7 @@ nav a:link, nav a:visited{
   text-decoration: none;
 }
 
-nav a:hover, nav a:active {
+nav a:hover, a:focus, nav a:active {
   color: #EE924D;
   text-decoration: underline;
 }
@@ -44,6 +60,8 @@ nav h1{
 
 }
 
+
+/*--------------------BODY STYLE--------------------*/
 body{
   background-color:#FDFAFB;
   font-family: 'Open Sans', sans-serif;
@@ -95,6 +113,8 @@ h5 {
   font-size: 1rem;
 }
 
+
+/*--------------------CHECKOUT PROCESS STYLE--------------------*/
 .checkout-process ul li {
   font-size:0.08rem;
   letter-spacing: 0.1rem;
