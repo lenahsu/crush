@@ -1,14 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
+
+<head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crush -Events-</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  </head>
-  <body>
-  </body>
+</head>
+
+<body>
+
+    <header>
+        <h1> CRUSH </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="critique.html">Critique</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+            <hr>
+        </nav>
+    </header>
+    <main>
+        <div class="flex-grid-one">
+            <h2>Critiques</h2>
+        </div>
+        <div class="flex-grid-one">
+            <p>You can request critiques from a panel of experiences artists on your own artwork. Please be specific in regards to the areas you want the critique to focus on. We hope that this will build an even stronger community of artists.</p>
+        </div>
+        <div class="flex-grid-one">
+            <div class="critique">
+                <h2>Critique Submission</h2>
+                <div class="critique-forms">
+                    <form>
+                        <input type="text" name="label" placeholder="First Name">
+                        <input type="text" name="label" placeholder="Last Name">
+                        <input type="text" name="label" placeholder="Artwork Title">
+                        <input type="text" name="label" placeholder="Medium">
+                        <input type="text" name="label" placeholder="Choose file">
+                        <button type="button">Upload</button>
+                        <textarea type="text" name="label" placeholder="Write something.." style="height:200px"></textarea>
+                    </form>
+
+                    <form action="confirm-critique.html">
+                        <input type="submit" value="Next">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
 </html>
