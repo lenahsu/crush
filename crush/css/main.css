@@ -3,7 +3,7 @@
 header {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-/*    background-color: #FDFAFB;*/
+    background-color: #FDFAFB;
     text-align: center;
     font-size: 2rem;
     color: #EE924D;
@@ -18,8 +18,8 @@ header {
 
 /*--------------------FOOTER STYLE--------------------*/
 main{
-    position: relative;
     padding-top: 16rem;
+    
 }
 
 
@@ -41,9 +41,9 @@ footer {
 /*--------------------NAV STYLE--------------------*/
 
 nav {
-    font-size: 1.20rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.13rem;
     color: #EE924D;
     text-align: center;
 }
