@@ -8,20 +8,21 @@ header {
     font-size: 2rem;
     color: #EE924D;
     letter-spacing: 0.4rem;
-    margin: 1rem;
     padding: 1rem;
     position: fixed;
+    top: 0;
     width: 100%;
-    display: block;
+    display: flex;
     z-index: 1200;
+    height: 11rem;
 }
 
 /*--------------------FOOTER STYLE--------------------*/
-main{
-    padding-top: 16rem;
-    
-}
 
+main {
+    padding: 16rem 4rem 0 4rem;
+    position: relative;
+}
 
 /*--------------------FOOTER STYLE--------------------*/
 
@@ -85,7 +86,6 @@ hr {
     border: none;
     border-bottom: 0.1rem solid #EE924D;
 }
-
 h2 {
     letter-spacing: 0.05rem;
     color: black;
@@ -216,4 +216,29 @@ form {
     width: 20rem;
     border: none;
     border-bottom: 0.1rem solid #C5CEDD;
+}
+
+/*CRITIQUE FORM STYLE*/
+
+.critique-forms hr {
+    display: block;
+    position: relative;
+    height: 0;
+    width: 30rem;
+    border: none;
+    border-bottom: 0.1rem solid #C5CEDD;
+    margin-bottom: 2rem;
+}
+.critique [type=text] {
+    text-align: center;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    font-size: 0.08rem;
+    background-color: #C5CEDD;
+    opacity: 0.5;
+    width: 30rem;
+    padding: 0.8rem;
+    margin: 1rem;
+    display: block;
+    border: none;
 }
