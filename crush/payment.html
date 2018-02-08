@@ -1,76 +1,97 @@
 <!--Payment-->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
+
+<head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crush -Home-</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/grid.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-      <h1> CRUSH </h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="shop.html">Shop</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="critique.html">Critique</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="cart.html">Cart</a></li>
-        </ul>
-        <hr>
-      </nav>
-    </header>
-    <div class = "checkout-process">
-      <ul>
-        <li><a href="shop.html">Back to Shop</a></li>
-        <li><a href="cart.html">Cart</a></li>
-        <li>></li>
-        <li><a href= "cart1.html">Shipping</a></li>
-        <li> > </li>
-        <li><a href= "cart2.html">Billing</a></li>
-        <li>></li>
-        <li><a href= "cart3.html">Payment</a></li>
-        <li>></li>
-        <li>Review</li>
-        <li>></li>
-        <li>Confirmation</li>
-      </ul>
-    </div>
-    <section class ="body-elements">
-      <div class = "checkout">
-        <h2> Checkout </h2>
-        <div class="checkout-forms">
-          <h5> 3. Payment Information </h5>
-          <hr>
-          <form>
-            <input type="checkbox" name="payment" value="Credit Card"> Credit Card
-            <input type="checkbox" name="payment" value="Debit Card"> Debit Card
-            <input type="checkbox" name="payment" value="Paypal"> Paypal
-            <input type="text" name="label" placeholder="Credit Card Number">
-            <input type="text" name="label" placeholder="Cardholder's Name">
-            <input type="text" name="label" placeholder="Expiry Date XX/XX">
-            <input type="text" name="label" placeholder="CVV XXX">
-          </form>
+</head>
 
-          <form action="review.html">
-            <input type="submit" value="Next">
-          </form>
+<body>
+    <header>
+        <h1> CRUSH </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="critique.html">Critique</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+            <hr>
+        </nav>
+    </header>
+    <main>
+        <div class="checkout-process">
+            <div class="flex-grid-seven">
+                <div class="col"><a href="shop.html">Back to Shop</a></div>
+                <div class="col"><a href="cart.html">Cart</a> >
+                </div>
+                <div class="col"><a href="shipping.html">Shipping</a> >
+                </div>
+                <div class="col"><a href="billing.html">Billing</a> >
+                </div>
+                <div class="col"><a href="payment.html">Payment</a> >
+                </div>
+                <div class="col">Review >
+                </div>
+                <div class="col">Confirmation</div>
+            </div>
         </div>
-        <div class = "order">
-          <h5>Your Order</h5>
-          <hr>
-          <h5>Subtotal</h5>
-          <h5>Shipping</h5>
-          <h5>Taxes</h5>
-          <hr>
-          <h5>Total</h5>
-        </div>
-      </div>
-    </section>
-  </body>
+
+        <section class="body-elements">
+            <div class="checkout">
+                <div class="flex-grid-one">
+                    <div class="col">
+                        <h2> Checkout </h2>
+                    </div>
+                </div>
+
+                <div class="checkout-forms">
+                    <div class="flex-grid-three">
+
+                        <div class="col-two-of-three">
+                            <h5> 3. Payment Information </h5>
+                            <hr>
+                            <form>
+                                <input type="checkbox" name="payment" value="Credit Card"> Credit Card
+                                <input type="checkbox" name="payment" value="Debit Card"> Debit Card
+                                <input type="checkbox" name="payment" value="Paypal"> Paypal
+                                <input type="text" name="label" placeholder="Credit Card Number">
+                                <input type="text" name="label" placeholder="Cardholder's Name">
+                                <input type="text" name="label" placeholder="Expiry Date XX/XX">
+                                <input type="text" name="label" placeholder="CVV XXX">
+                            </form>
+
+                            <form action="review.html">
+                                <input type="submit" value="Next">
+                            </form>
+                        </div>
+
+
+                        <div class="col">
+                            <div class="order">
+                                <h5>Your Order</h5>
+                                <hr>
+                                <h5>Subtotal</h5>
+                                <h5>Shipping</h5>
+                                <h5>Taxes</h5>
+                                <hr>
+                                <h5>Total</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+    </main>
+</body>
+
 </html>

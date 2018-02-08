@@ -1,70 +1,74 @@
 <!--Payment-->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
+
+<head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crush -Home-</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/grid.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-      <h1> CRUSH </h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="shop.html">Shop</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="critique.html">Critique</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="cart.html">Cart</a></li>
-        </ul>
-        <hr>
-      </nav>
-    </header>
-    <div class = "checkout-process">
-      <ul>
-        <li><a href="shop.html">Back to Shop</a></li>
-        <li><a href="cart.html">Cart</a></li>
-        <li>></li>
-        <li><a href= "shipping.html">Shipping</a></li>
-        <li> > </li>
-        <li><a href= "billing.html">Billing</a></li>
-        <li>></li>
-        <li><a href= "payment.html">Payment</a></li>
-        <li>></li>
-        <li><a href= "review.html">Review</a></li>
-        <li>></li>
-        <li>Confirmation</li>
-      </ul>
-    </div>
-    <section class ="body-elements">
-      <div class = "checkout">
-        <h2> Checkout </h2>
-        <div class="checkout-forms">
-          <h5> 4. Review </h5>
-          <hr>
-          <h5>Shipping Information</h5>
-          <h5>Billing Information</h5>
-          <h5>Payment Information</h5>
+</head>
 
-          <form action="confirm.html">
-            <input type="submit" value="Purchase">
-          </form>
+<body>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crush -Home-</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+    <main>
+        <div class="checkout-process">
+            <div class="flex-grid-seven">
+                <div class="col"><a href="shop.html">Back to Shop</a></div>
+                <div class="col"><a href="cart.html">Cart</a> >
+                </div>
+                <div class="col"><a href="shipping.html">Shipping</a> >
+                </div>
+                <div class="col"><a href="billing.html">Billing</a> >
+                </div>
+                <div class="col"><a href="payment.html">Payment</a> >
+                </div>
+                <div class="col"><a href="review.html">Review</a> >
+                </div>
+                <div class="col">Confirmation</div>
+            </div>
         </div>
-        <div class = "order">
-          <h5>Your Order</h5>
-          <hr>
-          <h5>Subtotal</h5>
-          <h5>Shipping</h5>
-          <h5>Taxes</h5>
-          <hr>
-          <h5>Total</h5>
-        </div>
-      </div>
+
+
+        <section class="body-elements">
+            <div class="checkout">
+                <h2> Checkout </h2>
+                <div class="checkout-forms">
+                    <h5> 4. Review </h5>
+                    <hr>
+                    <h5>Shipping Information</h5>
+                    <h5>Billing Information</h5>
+                    <h5>Payment Information</h5>
+
+                    <form action="confirm.html">
+                        <input type="submit" value="Purchase">
+                    </form>
+                </div>
+                <div class="order">
+                    <h5>Your Order</h5>
+                    <hr>
+                    <h5>Subtotal</h5>
+                    <h5>Shipping</h5>
+                    <h5>Taxes</h5>
+                    <hr>
+                    <h5>Total</h5>
+                </div>
+            </div>
+    </main>
     </section>
-  </body>
+</body>
+
 </html>

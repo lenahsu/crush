@@ -45,6 +45,12 @@
     background: #ccc;
 }
 
+.flex-grid-three .col-two-of-three{
+    width: 60%;
+    background: gray;
+}
+
+
 /*--------------4 COLUMN GRID--------------*/
 
 .flex-grid-four {
@@ -53,6 +59,20 @@
     margin-bottom: 1rem;
 }
 .flex-grid-four .col {
+    width: 14.2%;
+    background: #ccc;
+}
+
+/*---- 7 COLUMN GRID FOR CHECKOUT PROCESS----*/
+.flex-grid-seven{
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+  width: 50%;
+  text-align: center;
+}
+
+.flex-grid-seven .col {
     width: 21.5%;
     background: #ccc;
 }
