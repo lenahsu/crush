@@ -18,19 +18,19 @@
 }
 .flex-grid-one .col {
     width: 97%;
-    background: #ccc;
+    background: #fff;
 }
 
 /*--------------2 COLUMN GRID--------------*/
 
 .flex-grid-two {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-bottom: 1rem;
 }
 .flex-grid-two .col {
     width: 46.5%;
-    background: #ccc;
+    background: #fff;
 }
 
 /*--------------3 COLUMN GRID--------------*/
@@ -42,7 +42,7 @@
 }
 .flex-grid-three .col {
     width: 30%;
-    background: #ccc;
+    background: #fff;
 }
 
 .flex-grid-three .col-two-of-three{
@@ -60,7 +60,7 @@
 }
 .flex-grid-four .col {
     width: 14.2%;
-    background: #ccc;
+    background: #fff;
 }
 
 /*---- 7 COLUMN GRID FOR CHECKOUT PROCESS----*/
@@ -74,5 +74,5 @@
 
 .flex-grid-seven .col {
     width: 21.5%;
-    background: #ccc;
+    background: #fff;
 }
