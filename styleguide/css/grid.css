@@ -62,6 +62,19 @@
     border-color: darkorange;
 }
 
+/*--------------6 COLUMN GRID--------------*/
+
+.flex-grid-six {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.flex-grid-six .col {
+    width: 16%;
+    border: solid 0.1rem;
+    border-color: darkorange;
+}
+
 /*---- 7 COLUMN GRID FOR CHECKOUT PROCESS----*/
 .flex-grid-seven{
   display: flex;
