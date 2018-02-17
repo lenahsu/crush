@@ -108,7 +108,8 @@ h5 {
     text-transform: uppercase;
     color: #C5CEDD;
     letter-spacing: 0.1rem;
-    font-size: 1rem;
+    font-size: 0.5rem;
+    margin-bottom: 0;
 }
 
 /*--------------------CHECKOUT PROCESS STYLE--------------------*/
@@ -162,13 +163,14 @@ a:active {
 .checkout-forms hr {
     display: block;
     position: relative;
+    float:left;
     height: 0;
-    width: 30rem;
+    width: 35rem;
     border: none;
     border-bottom: 0.1rem solid #C5CEDD;
     margin-bottom: 2rem;
 }
-.checkout [type=text] {
+.forms [type=text] {
     text-align: center;
     letter-spacing: 0.05rem;
     text-transform: uppercase;
@@ -181,6 +183,8 @@ a:active {
     display: block;
     border: none;
 }
+
+/*--Buttons--*/
 [type=submit] {
     text-align: center;
     letter-spacing: 0.05rem;
@@ -193,6 +197,13 @@ a:active {
     display: block;
     border: 0.05rem solid #C5CEDD;
 }
+
+[type=submit]:hover{
+    background: #C5CEDD;
+    color: white;
+}
+
+
 [type=checkbox] {
     letter-spacing: 0.05rem;
     background-color: #C5CEDD;
@@ -200,6 +211,7 @@ a:active {
     width: 1rem;
     margin: 1rem;
 }
+
 form {
     letter-spacing: 0.05rem;
     text-transform: uppercase;

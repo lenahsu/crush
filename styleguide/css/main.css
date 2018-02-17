@@ -238,6 +238,8 @@ a:active {
     display: block;
     border: 0.05rem solid #C5CEDD;
 }
+
+
 [type=checkbox] {
     letter-spacing: 0.05rem;
     background-color: #C5CEDD;
