@@ -22,6 +22,8 @@ header {
 main {
     padding: 16rem 4rem 0 4rem;
     position: relative;
+    width: 70%;
+    left: 10rem;
 }
 
 /*--------------------FOOTER STYLE--------------------*/
@@ -114,6 +116,23 @@ h5 {
 
 /*--------------------CHECKOUT PROCESS STYLE--------------------*/
 
+.price{
+    float: right;
+}
+
+.order {
+    float: right;
+}
+
+.order hr {
+    display: block;
+    position: relative;
+    height: 0;
+    width: 20rem;
+    border: none;
+    border-bottom: 0.1rem solid #C5CEDD;
+}
+
 .checkout-process {
     font-size: 0.08rem;
     letter-spacing: 0.1rem;
@@ -139,26 +158,6 @@ a:active {
     padding-right: 8rem;
 }
 
-/* .shipping hr {
-   display: block;
-   position: relative;
-   height: 0;
-   width: 45rem;
-   border: none;
-   border-bottom: 0.1rem solid #C5CEDD;
-   margin-bottom:2rem;
-} */
-
-
-/* .billing{
-  float: left;
-  padding-right: 8rem;
-}
-.billing hr {
-
-  float: left;
-  padding-right: 8rem;
-} */
 
 .checkout-forms hr {
     display: block;
@@ -217,17 +216,7 @@ form {
     text-transform: uppercase;
     font-size: 0.08rem;
 }
-.order {
-    float: right;
-}
-.order hr {
-    display: block;
-    position: relative;
-    height: 0;
-    width: 20rem;
-    border: none;
-    border-bottom: 0.1rem solid #C5CEDD;
-}
+
 
 /*CRITIQUE FORM STYLE*/
 
