@@ -70,36 +70,42 @@ nav h1 {
     text-transform: capitalize;
     font-weight: 900;
 }
+hr {
+    display: block;
+    position: relative;
+    margin: 1rem auto;
+    margin-top: 2rem;
+    height: 0;
+    width: 70%;
+    line-height: 0;
+    border: none;
+    border-bottom: 0.1rem solid #EE924D;
+}
 
 /*--------------------BODY STYLE--------------------*/
 
 body {
     background-color: #FDFAFB;
     font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.04rem;
 }
-hr {
-    display: block;
-    position: relative;
-    margin: 1rem auto;
-    height: 0;
-    width: 60%;
-    line-height: 0;
-    border: none;
-    border-bottom: 0.1rem solid #EE924D;
-}
+
 h2 {
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.06rem;
     color: black;
-    font-size: 1.5rem;
-    padding-bottom: 2rem;
+    font-size: 0.9rem;
     font-weight: 400;
+    text-transform: uppercase;
 }
 h3 {
     text-transform: lowercase;
     letter-spacing: 0.05rem;
     color: #EE924D;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 h4 {
     text-transform: lowercase;
@@ -112,6 +118,15 @@ h5 {
     letter-spacing: 0.1rem;
     font-size: 0.5rem;
     margin-bottom: 0;
+}
+
+p{
+    color: #C5CEDD;
+    margin-top: 0rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    font-size: 0.8rem;
+    width: 70%
 }
 
 /*--------------------CHECKOUT PROCESS STYLE--------------------*/
