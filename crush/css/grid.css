@@ -18,7 +18,7 @@
 }
 .flex-grid-one .col {
     width: 97%;
-    background: #fff;
+/*    background: #fff;*/
 }
 
 /*--------------2 COLUMN GRID--------------*/
@@ -43,11 +43,6 @@
 .flex-grid-three .col {
     width: 30%;
 /*    background: #fff;*/
-}
-
-.flex-grid-three .col-two-of-three{
-    width: 60%;
-    background: gray;
 }
 
 
