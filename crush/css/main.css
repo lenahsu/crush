@@ -70,7 +70,7 @@ nav h1 {
     text-transform: capitalize;
     font-weight: 900;
 }
-hr {
+nav hr {
     display: block;
     position: relative;
     margin: 1rem auto;
@@ -98,6 +98,7 @@ h2 {
     font-size: 0.9rem;
     font-weight: 400;
     text-transform: uppercase;
+    padding-bottom:2rem;
 }
 h3 {
     text-transform: lowercase;
@@ -128,6 +129,37 @@ p{
     font-size: 0.8rem;
     width: 70%
 }
+
+.bio{
+    text-align: left;
+    line-height: normal;
+}
+
+hr {
+    display: block;
+    position: relative;
+    height: 0;
+    width: 30rem;
+    border: none;
+    border-bottom: 0.05rem solid #C5CEDD;
+    margin-bottom: 2rem;
+}
+
+/*----------------- PRODUCT LISTING --------------------*/
+#product-listing{
+    line-height: 0.2rem;
+}
+
+#product-listing a:link{
+    text-decoration: none;
+}
+
+#product-listing a:hover{
+    text-decoration: underline;
+    color: gray;
+    
+}
+
 
 /*--------------------CHECKOUT PROCESS STYLE--------------------*/
 
