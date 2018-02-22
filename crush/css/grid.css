@@ -1,14 +1,3 @@
-/*-------------------- GRID SYSTEM--------------------*/
-
-@media (max-width: 600px) {
-  .flex-grid-three {
-    display: block;
-    }
-    .col {
-      width: 100%;
-  }
-}
-
 /*--------------1 COLUMN GRID--------------*/
 
 .flex-grid-one {
@@ -17,20 +6,20 @@
     margin-bottom: 1rem;
 }
 .flex-grid-one .col {
-    width: 97%;
-    background: #fff;
+    width: 99%;
 }
+
 
 /*--------------2 COLUMN GRID--------------*/
 
 .flex-grid-two {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 1rem;
 }
 .flex-grid-two .col {
     width: 46.5%;
-    background: #fff;
 }
 
 /*--------------3 COLUMN GRID--------------*/
@@ -38,40 +27,50 @@
 .flex-grid-three {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-bottom: 1rem;
 }
 .flex-grid-three .col {
     width: 30%;
-    background: #fff;
 }
-
-.flex-grid-three .col-two-of-three{
+.flex-grid-three .col-two-of-three {
     width: 60%;
     background: gray;
 }
-
 
 /*--------------4 COLUMN GRID--------------*/
 
 .flex-grid-four {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 1rem;
+        justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  border: 1px solid silver;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
 }
 .flex-grid-four .col {
-    width: 14.2%;
-    background: #fff;
+background-color: aqua;
+     -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 /*---- 7 COLUMN GRID FOR CHECKOUT PROCESS----*/
-.flex-grid-seven{
-  display: flex;
-  justify-content: space-around;
-  margin: 1rem;
-  width: 50%;
-  text-align: center;
-}
 
+.flex-grid-seven {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 1rem;
+    width: 50%;
+    text-align: center;
+}
 .flex-grid-seven .col {
     width: 21.5%;
 }
