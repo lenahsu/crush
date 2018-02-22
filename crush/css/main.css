@@ -8,11 +8,15 @@ header {
     font-size: 2rem;
     color: #EE924D;
     letter-spacing: 0.4rem;
-    padding: 1rem;
+/*    padding: 1rem;*/
+    
+        display: flex;
+     flex-direction: row;
+    flex-wrap:wrap;
     position: fixed;
+    justify-content: center;
     top: 0;
-    width: 100%;
-    display: flex;
+
     z-index: 1200;
     height: 11rem;
 }
@@ -33,7 +37,7 @@ footer {
     bottom: 0;
     font-family: 'Lato', sans-serif;
     font-size: .75rem;
-    background-color: #C5CEDD;
+    background-color: #EE924D;
     width: 100%;
     text-align: left;
     padding: 3rem 3rem;
@@ -304,4 +308,35 @@ form {
     margin: 1rem;
     display: block;
     border: none;
+}
+/*-------------------WEBSITE FRAME STYLE------------------*/
+
+.websiteFrame {
+    position: fixed;
+    z-index: 1500;
+    background-color: #EE924D;
+}
+#websiteFrameTop {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+}
+#websiteFrameRight {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 1rem;
+}
+#websiteFrameBottom {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+}
+#websiteFrameLeft {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 1rem;
 }
