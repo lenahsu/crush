@@ -8,17 +8,11 @@ header {
     font-size: 2rem;
     color: #EE924D;
     letter-spacing: 0.4rem;
-/*    padding: 1rem;*/
-    
-        display: flex;
-     flex-direction: row;
-    flex-wrap:wrap;
-    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    top: 0;
-
     z-index: 1200;
-    height: 11rem;
 }
 
 /*--------------------FOOTER STYLE--------------------*/
@@ -37,11 +31,25 @@ footer {
     bottom: 0;
     font-family: 'Lato', sans-serif;
     font-size: .75rem;
+    color: white;
     background-color: #EE924D;
     width: 100%;
     text-align: left;
     padding: 3rem 3rem;
     margin-top: 2rem;
+}
+
+footer a:link,
+footer a:visited {
+    font-size: 1rem;
+     color: white;
+    text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus,
+footer a:active {
+    text-decoration: underline;
 }
 
 /*--------------------NAV STYLE--------------------*/
@@ -65,7 +73,7 @@ nav a:visited {
     text-decoration: none;
 }
 nav a:hover,
-a:focus,
+nav a:focus,
 nav a:active {
     color: #EE924D;
     text-decoration: underline;
@@ -118,16 +126,22 @@ h5 {
     margin-bottom: 0;
 }
 
-/*--------------------CHECKOUT PROCESS STYLE--------------------*/
+/*--------------------LIST STYLE--------------------*/
 
-.price{
-    float: right;
+ul {
+    list-style: none;
+    line-height: 1.5rem;
 }
 
+
+/*--------------------CHECKOUT PROCESS STYLE--------------------*/
+
+.price {
+    float: right;
+}
 .order {
     float: right;
 }
-
 .order hr {
     display: block;
     position: relative;
@@ -136,7 +150,6 @@ h5 {
     border: none;
     border-bottom: 0.1rem solid #C5CEDD;
 }
-
 .checkout-process {
     font-size: 0.08rem;
     letter-spacing: 0.1rem;
@@ -161,12 +174,10 @@ a:active {
     float: left;
     padding-right: 8rem;
 }
-
-
 .checkout-forms hr {
     display: block;
     position: relative;
-    float:left;
+    float: left;
     height: 0;
     width: 35rem;
     border: none;
@@ -188,6 +199,7 @@ a:active {
 }
 
 /*--Buttons--*/
+
 [type=submit] {
     text-align: center;
     letter-spacing: 0.05rem;
@@ -200,13 +212,10 @@ a:active {
     display: block;
     border: 0.05rem solid #C5CEDD;
 }
-
-[type=submit]:hover{
+[type=submit]:hover {
     background: #C5CEDD;
     color: white;
 }
-
-
 [type=checkbox] {
     letter-spacing: 0.05rem;
     background-color: #C5CEDD;
@@ -214,13 +223,11 @@ a:active {
     width: 1rem;
     margin: 1rem;
 }
-
 form {
     letter-spacing: 0.05rem;
     text-transform: uppercase;
     font-size: 0.08rem;
 }
-
 
 /*CRITIQUE FORM STYLE*/
 
@@ -246,6 +253,7 @@ form {
     display: block;
     border: none;
 }
+
 /*-------------------WEBSITE FRAME STYLE------------------*/
 
 .websiteFrame {

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, 
-maximum-scale=1.0, user-scalable=no" />
+maximum-scale=1.0, user-scalable=no">
     <title>Crush -Home-</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/normalize.css">
@@ -15,18 +15,22 @@ maximum-scale=1.0, user-scalable=no" />
 
 <body>
     <header>
-        <h1> CRUSH </h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="critique.html">Critique</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="cart.html">Cart</a></li>
-            </ul>
-            <hr>
-        </nav>
+        <div class="flex-grid-one">
+            <h1>CRUSH</h1>
+        </div>
+        <div class="flex-grid-one">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="critique.html">Critique</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+                <hr>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -42,24 +46,29 @@ maximum-scale=1.0, user-scalable=no" />
         </div>
     </main>
 
-
     <footer>
         <div class="flex-grid-two">
             <div class="col">
-
-                <a href="#">Styleguide</a>
-                <a href="#">Citations</a>
-                <a href="#">Support</a>
+                <ul>
+                    <li> <a href="#">Styleguide</a></li>
+                    <li><a href="#">Citations</a></li>
+                    <li> <a href="#">Support</a></li>
+                </ul>
             </div>
+
             <div class="col">
-                <a href="#">facebook</a>
-                <a href="#">instagram</a>
-                <a href="#">twitter</a>
+                <div class="flex-grid-three">
+
+                    <a href="#"><img src="img/social-media/facebook-icon.png"></a>
+                    <a href="#"><img src="img/social-media/twitter-icon.png"></a>
+                    <a href="#"><img src="img/social-media/instagram-icon.png"></a>
+                </div>
             </div>
         </div>
         <div class="flex-grid-one">
             <p>CRUSH &copy; 2018 Elena Hsu + Phoebe Lim</p>
         </div>
+
         <div id="websiteFrameTop" class="websiteFrame"></div>
         <div id="websiteFrameRight" class="websiteFrame"></div>
         <div id="websiteFrameBottom" class="websiteFrame"></div>
