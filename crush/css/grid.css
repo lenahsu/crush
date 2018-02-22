@@ -1,9 +1,10 @@
+
+
 /*--------------1 COLUMN GRID--------------*/
 
 .flex-grid-one {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 1rem;
 }
 .flex-grid-one .col {
 <<<<<<< HEAD
@@ -13,7 +14,6 @@
     width: 99%;
 >>>>>>> Phoeb
 }
-
 
 /*--------------2 COLUMN GRID--------------*/
 
@@ -63,28 +63,23 @@
 
 .flex-grid-four {
     display: flex;
-        justify-content: space-around;
+    justify-content: space-around;
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
     list-style: none;
-  border: 1px solid silver;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
+    border: 1px solid silver;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
 }
 .flex-grid-four .col {
-<<<<<<< HEAD
-    width: 14.2%;
-/*    background: #fff;*/
-=======
 background-color: aqua;
      -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
->>>>>>> Phoeb
 }
 
 /*---- 7 COLUMN GRID FOR CHECKOUT PROCESS----*/
