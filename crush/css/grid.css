@@ -26,7 +26,7 @@
 .flex-grid-two {
     display: flex;
     justify-content: center;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
 }
 .flex-grid-two .col {
     width: 46.5%;
@@ -38,7 +38,8 @@
 .flex-grid-three {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 1rem;
+    margin-bottom: 4srem;
+    
 }
 .flex-grid-three .col {
     width: 30%;
