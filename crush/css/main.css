@@ -15,14 +15,6 @@ header {
     z-index: 1200;
 }
 
-/*--------------------FOOTER STYLE--------------------*/
-
-main {
-    padding: 16rem 4rem 0 4rem;
-    position: relative;
-    width: 70%;
-    left: 10rem;
-}
 
 /*--------------------FOOTER STYLE--------------------*/
 
@@ -348,4 +340,10 @@ form {
     bottom: 0;
     left: 0;
     width: 1rem;
+}
+
+
+/*-------------------RESPONSIVE IMG STYLE------------------*/
+img{
+  max-width:100%  
 }
