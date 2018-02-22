@@ -1,18 +1,11 @@
-
-
 /*--------------1 COLUMN GRID--------------*/
 
 .flex-grid-one {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 .flex-grid-one .col {
-<<<<<<< HEAD
     width: 97%;
-/*    background: #fff;*/
-=======
-    width: 99%;
->>>>>>> Phoeb
 }
 
 /*--------------2 COLUMN GRID--------------*/
@@ -20,19 +13,13 @@
 .flex-grid-two {
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
-    margin-bottom: 4rem;
+    align-content: center;
 }
 .flex-grid-two .col {
-    width: 46.5%;
-/*    background: #fff;*/
-=======
     flex-wrap: wrap;
-    margin-bottom: 1rem;
-}
-.flex-grid-two .col {
     width: 46.5%;
->>>>>>> Phoeb
+    margin-bottom: 1rem;
+    margin-left: 2rem;
 }
 
 /*--------------3 COLUMN GRID--------------*/
@@ -41,12 +28,9 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 4rem;
-    
 }
 .flex-grid-three .col {
     width: 30%;
-/*    background: #fff;*/
-=======
     flex-wrap: wrap;
     margin-bottom: 1rem;
 }
@@ -56,7 +40,6 @@
 .flex-grid-three .col-two-of-three {
     width: 60%;
     background: gray;
->>>>>>> Phoeb
 }
 
 /*--------------4 COLUMN GRID--------------*/
@@ -68,18 +51,9 @@
     padding: 0;
     margin: 0;
     list-style: none;
-    border: 1px solid silver;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: flex;
 }
 .flex-grid-four .col {
-background-color: aqua;
-     -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
+    width: 25%;
 }
 
 /*---- 7 COLUMN GRID FOR CHECKOUT PROCESS----*/
@@ -96,7 +70,6 @@ background-color: aqua;
     width: 21.5%;
 }
 
-
 /*--TRYING SOMETHING WITH GRIDS OUT ON ABOUT PAGE FIRST--*/
 
 
@@ -111,17 +84,14 @@ background-color: aqua;
 }
 .grid-two .col {
     width: 46.5%;
-
 }
-
-.grid-two .col .name-one{
+.grid-two .col .name-one {
     position: absolute;
-    z-index:100;
+    z-index: 100;
     top: 2rem;
     left: 13rem;
     width: 5rem;
 }
-
 .grid-two .col .name-two {
     position: absolute;
     z-index: 100;
@@ -139,21 +109,19 @@ background-color: aqua;
 }
 .grid-three .col {
     width: 30%;
-/*    background: #fff;*/
+    /*    background: #fff;*/
 }
-
-.grid-three .col-two-of-three{
+.grid-three .col-two-of-three {
     width: 60%;
     background: gray;
 }
-
 
 /*--------------4 COLUMN GRID--------------*/
 
 .grid-four {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 1rem;    
+    margin-bottom: 1rem;
     position: relative;
     z-index: 100;
 }

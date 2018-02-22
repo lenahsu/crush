@@ -14,7 +14,14 @@ header {
     justify-content: center;
     z-index: 1200;
 }
-
+main {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+main a:link,
+main a:visited {
+    text-decoration: none;
+}
 
 /*--------------------FOOTER STYLE--------------------*/
 
@@ -30,14 +37,12 @@ footer {
     padding: 3rem 3rem;
     margin-top: 2rem;
 }
-
 footer a:link,
 footer a:visited {
     font-size: 1rem;
-     color: white;
+    color: white;
     text-decoration: none;
 }
-
 footer a:hover,
 footer a:focus,
 footer a:active {
@@ -95,14 +100,13 @@ body {
     line-height: 1.5rem;
     letter-spacing: 0.04rem;
 }
-
 h2 {
     letter-spacing: 0.06rem;
     color: black;
     font-size: 0.9rem;
     font-weight: 400;
     text-transform: uppercase;
-    padding-bottom:2rem;
+    padding-bottom: 2rem;
 }
 h3 {
     text-transform: lowercase;
@@ -123,15 +127,12 @@ h5 {
     font-size: 0.5rem;
     margin-bottom: 0;
 }
-
-h6{
-    text-transform:none;
-    color:black;
-    font-size:0.8rem;
-
+h6 {
+    text-transform: none;
+    color: black;
+    font-size: 0.8rem;
 }
-
-p{
+p {
     color: #C5CEDD;
     margin-top: 0rem;
     padding-bottom: 2rem;
@@ -139,12 +140,10 @@ p{
     font-size: 0.8rem;
     width: 70%
 }
-
-.bio{
+.bio {
     text-align: left;
     line-height: normal;
 }
-
 hr {
     display: block;
     position: relative;
@@ -156,20 +155,18 @@ hr {
 }
 
 /*----------------- PRODUCT LISTING --------------------*/
-#product-listing{
+
+#product-listing {
     line-height: 0.2rem;
 }
-
-#product-listing a:link{
+#product-listing a:link {
     text-decoration: none;
 }
-
-#product-listing a:hover{
+#product-listing a:hover {
     text-decoration: underline;
     color: gray;
 }
-
-img{
+img {
     justify-content: center;
     text-align: center;
 }
@@ -180,7 +177,6 @@ ul {
     list-style: none;
     line-height: 1.5rem;
 }
-
 
 /*--------------------CHECKOUT PROCESS STYLE--------------------*/
 
@@ -272,13 +268,11 @@ a:active {
     width: 1rem;
     margin: 1rem;
 }
-
-[type=number]{
+[type=number] {
     width: 1.5rem;
     height: 1rem;
-    font-size:0.5rem;
+    font-size: 0.5rem;
 }
-
 form {
     letter-spacing: 0.05rem;
     text-transform: uppercase;
@@ -342,8 +336,11 @@ form {
     width: 1rem;
 }
 
+/*-------------------IMG STYLES------------------*/
 
-/*-------------------RESPONSIVE IMG STYLE------------------*/
-img{
-  max-width:100%  
+
+/*makes images responsive*/
+
+img {
+    max-width: 100%
 }
