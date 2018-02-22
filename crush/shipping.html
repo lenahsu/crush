@@ -29,6 +29,9 @@
         </nav>
     </header>
     <main>
+        <div class="flex-grid-one">
+            <h2>Checkout</h2>
+        </div>
         <div class="checkout-process">
             <div class="flex-grid-seven">
                 <div class="col"><a href="shop.html">Back to Shop</a>
@@ -47,39 +50,52 @@
                 </div>
             </div>
         </div>
-            <div class="forms">
-                <h2> Checkout </h2>
-                <div class="checkout-forms">
-                    <h5> 1. Shipping Information </h5>
-                    <hr>
-                    <form>
-                        <input type="text" name="label" placeholder="Email">
-                        <input type="text" name="label" placeholder="First Name">
-                        <input type="text" name="label" placeholder="Last Name">
-                        <input type="text" name="label" placeholder="Address Line 1">
-                        <input type="text" name="label" placeholder="Address Line 2">
-                        <input type="text" name="label" placeholder="City/Town">
-                        <input type="text" name="label" placeholder="Province">
-                        <input type="text" name="label" placeholder="Postal Code">
-                    </form>
+        <div class="forms">
+            <div class="flex-grid-two">
+                <div class="col">
+                    <div class="checkout-forms">
+                        <h5> 1. Shipping Information </h5>
+                        <hr>
+                        <form>
+                            <input type="text" name="label" placeholder="Email">
+                            <input type="text" name="label" placeholder="First Name">
+                            <input type="text" name="label" placeholder="Last Name">
+                            <input type="text" name="label" placeholder="Address Line 1">
+                            <input type="text" name="label" placeholder="Address Line 2">
+                            <input type="text" name="label" placeholder="City/Town">
+                            <input type="text" name="label" placeholder="Province">
+                            <input type="text" name="label" placeholder="Postal Code">
+                        </form>
+                    </div>
 
-                    <form action="billing.html">
-                        <input type="submit" value="Next">
-                    </form>
                 </div>
-                <div class="order">
-                    <h5>Your Order</h5>
-                    <hr>
-                    <h5>A Day at the beach</h5> <h5 class="price"> 246 CAD</h5>
-                    <h5>Oranges on Oranges</h5> <h5 class="price"> 246 CAD</h5>
-                    <hr>
-                    <h5>Subtotal</h5> <h5 class="price"> 246 CAD</h5>
-                    <h5>Shipping</h5> <h5 class="price"> 246 CAD</h5>
-                    <h5>Taxes</h5> <h5 class="price"> 246 CAD</h5>
-                    <hr>
-                    <h5>Total</h5> <h5 class="price"> 246 CAD</h5>
+                <div class="col">
+                    <div class="order">
+                        <h5>Your Order</h5>
+                        <hr>
+                        <h5>Bergen</h5>
+                        <h5 class="price"> $50</h5>
+                        <h5>Humlebaek</h5>
+                        <h5 class="price"> $25</h5>
+                        <hr>
+                        <h5>Subtotal</h5>
+                        <h5 class="price"> $75</h5>
+                        <h5>Shipping</h5>
+                        <h5 class="price"> $10</h5>
+                        <h5>Taxes</h5>
+                        <h5 class="price"> TBD</h5>
+                        <hr>
+                        <h5>Total</h5>
+                        <h5 class="price"> TBD</h5>
+                    </div>
                 </div>
             </div>
+        </div>
+
+            <form action="billing.html">
+                <input type="submit" value="Next">
+            </form>
+
     </main>
 </body>
 </html>

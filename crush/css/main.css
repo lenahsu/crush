@@ -120,6 +120,13 @@ h5 {
     margin-bottom: 0;
 }
 
+h6{
+    text-transform:none;
+    color:black;
+    font-size:0.8rem;
+
+}
+
 p{
     color: #C5CEDD;
     margin-top: 0rem;

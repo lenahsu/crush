@@ -38,7 +38,7 @@
 .flex-grid-three {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 4rem;
+    margin-bottom: 4srem;
     
 }
 .flex-grid-three .col {
