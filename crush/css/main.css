@@ -238,9 +238,19 @@ a:active {
     opacity: 0.5;
     width: 30rem;
     padding: 0.8rem;
-    margin: 1rem;
+    margin-left: 1rem;
     display: block;
     border: none;
+}
+
+form h5{
+    color: gray;
+    padding-left: 1rem;
+}
+
+.forms .shorter-label{
+    width: 12rem;
+    
 }
 
 /*--Buttons--*/
