@@ -24,9 +24,9 @@
 
 /*------PRODUCT LISTING IMAGES FLEXBOX--------*/
 .col {
-	-webkit-flex: 3 1 400px;
-	-ms-flex: 3 1 400px;
-	flex: 3 1 400px;
+	-webkit-flex: 1 1 400px;
+	-ms-flex: 1 1 400px;
+	flex: 1 1 400px;
 }
 
 /*
