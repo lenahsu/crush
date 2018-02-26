@@ -3,6 +3,23 @@
 	box-sizing: border-box;
 }
 
+.flex-grid-two {
+
+	
+	display: -webkit-flex; 
+	display: -ms-flex;
+	display: flex;
+
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+
+	-webkit-justify-content: space-around;
+	-ms-justify-content: space-around;
+	justify-content: space-around;
+
+}
+
 
 .flex-grid-three {
 
