@@ -118,12 +118,12 @@ h3 {
 }
 h4 {
     text-transform: lowercase;
-    color: #C5CEDD;
-    font-size: 1rem;
+    color: #555F72;
+    font-size: 1.5rem;
 }
 h5 {
     text-transform: uppercase;
-    color: #C5CEDD;
+    color: #555F72;
     letter-spacing: 0.1rem;
     font-size: 0.5rem;
     margin-bottom: 0;
