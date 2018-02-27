@@ -202,6 +202,17 @@ li{
     border: none;
     border-bottom: 0.1rem solid #C5CEDD;
 }
+
+.order a:link, a:visited{
+    color:black;
+    text-decoration:none;
+    
+}
+
+.order a:hover, a:active{
+    color: black;
+    text-decoration: underline;
+}
 .checkout-process {
     font-size: 0.08rem;
     letter-spacing: 0.1rem;
@@ -259,6 +270,10 @@ form h5{
 .forms .shorter-label{
     width: 12rem;
     
+}
+
+.reccommended{
+    padding-top:4rem;
 }
 
 /*--Buttons--*/
@@ -362,3 +377,24 @@ form {
 img {
     max-width: 100%
 }
+
+
+
+
+/*-------------------MEDIA QUERIES FOR FORMS-------------*/
+/*
+@media (max-width: 400px) {
+    .forms [type=text]{
+        width: 45%;
+        }
+        .forms .shorter-forms [type=text]{
+        width: 45%;
+        
+  }
+}
+
+@media (min-width: 700px) {
+    .forms [type=text]{
+        width: 100%;
+  }
+}*/
