@@ -119,23 +119,26 @@ h3 {
 }
 h4 {
     text-transform: lowercase;
-    color: #C5CEDD;
+    color: #8C95A6;
     font-size: 1rem;
 }
 h5 {
     text-transform: uppercase;
-    color: #C5CEDD;
+    color: #8C95A6;
     letter-spacing: 0.1rem;
     font-size: 0.5rem;
     margin-bottom: 0;
 }
 h6 {
-    text-transform: none;
+    
     color: black;
     font-size: 0.8rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.03rem;
+    
 }
 p {
-    color: #C5CEDD;
+    color: #8C95A6;
     margin-top: 0rem;
     padding-bottom: 2rem;
     text-align: center;
@@ -152,7 +155,7 @@ hr {
     height: 0;
     width: 30rem;
     border: none;
-    border-bottom: 0.05rem solid #C5CEDD;
+    border-bottom: 0.05rem solid #8C95A6;
     margin-bottom: 2rem;
 }
 
@@ -186,13 +189,14 @@ li{
     padding-left: 0.3rem;
 }
 
-/*--------------------CHECKOUT PROCESS STYLE--------------------*/
+/*--------------------CHECKOUT STYLE--------------------*/
 
 .price {
     float: right;
 }
 .order {
     float: right;
+    line-height: 1rem;
 }
 .order hr {
     display: block;
@@ -200,7 +204,7 @@ li{
     height: 0;
     width: 20rem;
     border: none;
-    border-bottom: 0.1rem solid #C5CEDD;
+    border-bottom: 0.1rem solid #8C95A6;
 }
 
 .order a:link, a:visited{
@@ -221,7 +225,7 @@ li{
     display: inline;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    color: #C5CEDD;
+    color: #8C95A6;
     line-height: 1rem;
 }
 .checkout-process a:link,
@@ -245,7 +249,7 @@ a:active {
     height: 0;
     width: 35rem;
     border: none;
-    border-bottom: 0.1rem solid #C5CEDD;
+    border-bottom: 0.1rem solid #8C95A6;
     margin-bottom: 2rem;
 }
 .forms [type=text] {
@@ -253,7 +257,7 @@ a:active {
     letter-spacing: 0.05rem;
     text-transform: uppercase;
     font-size: 0.08rem;
-    background-color: #C5CEDD;
+    background-color: #8C95A6;
     opacity: 0.5;
     width: 30rem;
     padding: 0.8rem;
@@ -272,6 +276,10 @@ form h5{
     
 }
 
+.review{
+    padding-left:1rem;
+}
+
 .reccommended{
     padding-top:4rem;
 }
@@ -288,15 +296,15 @@ form h5{
     padding: 0.8rem;
     margin-top: 4rem;
     display: block;
-    border: 0.05rem solid #C5CEDD;
+    border: 0.05rem solid #8C95A6;
 }
 [type=submit]:hover {
-    background: #C5CEDD;
+    background: #8C95A6;
     color: white;
 }
 [type=checkbox] {
     letter-spacing: 0.05rem;
-    background-color: #C5CEDD;
+    background-color: #8C95A6;
     height: 1rem;
     width: 1rem;
     margin: 1rem;
@@ -320,7 +328,7 @@ form {
     height: 0;
     width: 30rem;
     border: none;
-    border-bottom: 0.1rem solid #C5CEDD;
+    border-bottom: 0.1rem solid #8C95A6;
     margin-bottom: 2rem;
 }
 .critique [type=text] {
@@ -328,7 +336,7 @@ form {
     letter-spacing: 0.05rem;
     text-transform: uppercase;
     font-size: 0.08rem;
-    background-color: #C5CEDD;
+    background-color: #8C95A6;
     opacity: 0.5;
     width: 30rem;
     padding: 0.8rem;
@@ -342,7 +350,7 @@ form {
 .websiteFrame {
     position: fixed;
     z-index: 1500;
-    background-color: #EE924D;
+    background-color: #8C95A6;
 }
 #websiteFrameTop {
     top: 0;
