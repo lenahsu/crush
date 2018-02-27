@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/grid.css">
-        <link rel="stylesheet" href="css/flexbox.css">
+    <link rel="stylesheet" href="css/flexbox.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
@@ -35,20 +35,20 @@
         </div>
 
         <div class="checkout-process">
-            <div class="flex-grid-seven">
-                <div class="col"><a href="shop.html">Back to Shop</a></div>
-                <div class="col"><a href="cart.html">Cart</a> >
-                </div>
-                <div class="col"><a href="shipping.html">Shipping</a> >
-                </div>
-                <div class="col"><a href="billing.html">Billing</a> >
-                </div>
-                <div class="col"><a href="payment.html">Payment</a> >
-                </div>
-                <div class="col"><a href="review.html">Review</a> >
-                </div>
-                <div class="col">Confirmation</div>
-            </div>
+            <ul>
+                <li><a href="shop.html">Back to Shop</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li>></li>
+                <li><a href="shipping.html">Shipping</a></li>
+                <li>></li>
+                <li><a href="billing.html"> Billing</a></li>
+                <li>></li>
+                <li><a href="payment.html">Payment</a></li>
+                <li>></li>
+                <li><a href="review.html">Review</a></li>
+                <li>></li>
+                <li>Confirmation</li>
+            </ul>
         </div>
 
 
@@ -58,27 +58,33 @@
                     <div class="checkout-forms">
                         <h5> 4. Review </h5>
                         <hr>
-                        <h5>Shipping Information</h5>
-                        <h6>Erin Tam
-                        1632 Rumble St.
-                        Burnaby, B.C.
-                        V5J 1P3
-                        etam@gmail.com</h6>
-
-                        <h5>Billing Information</h5>
-                        <h6>Erin Tam
-                        1632 Rumble St.
-                        Burnaby, B.C.
-                        V5J 1P3
-                        etam@gmail.com</h6>
-                        
-                        <h5>Payment Information</h5>
-                        <h6> Mastercard 
-                            xxxx xxxx xxxx 1529 
-                            Erin Tam
-                            EXP 02/14
-                            CVV xx
-                        </h6>
+                        <div class="review">
+                            <h5>Shipping Information</h5>
+                            <h6>etam@gmail.com<br>
+                                Erin Tam <br>
+                                1632 Rumble St.<br> 
+                                Burnaby, B.C.<br>
+                                V5J 1P3<br>
+                            </h6>
+                        </div>
+                        <div class="review">
+                            <h5>Billing Information</h5>
+                            <h6>etam@gmail.com<br>
+                                Erin Tam <br>
+                                1632 Rumble St.<br> 
+                                Burnaby, B.C.<br>
+                                V5J 1P3<br>
+                            </h6>
+                        </div>
+                        <div class="review">
+                            <h5>Payment Information</h5>
+                            <h6> Mastercard<br>
+                                xxxx xxxx xxxx 1529<br>
+                                Erin Tam<br>
+                                EXP 02&sol;14<br>
+                                CVV xxx<br>
+                            </h6>
+                        </div>
 
 
                     </div>
@@ -87,20 +93,22 @@
                     <div class="order">
                         <h5>Your Order</h5>
                         <hr>
-                        <h5>Bergen</h5>
-                        <h5 class="price"> $50</h5>
-                        <h5>Humlebaek</h5>
-                        <h5 class="price"> $25</h5>
+                        <h5><a href="product-detail.html">Bergen<div class="price">&dollar;50</div></a></h5>
+                        <h5><a href="product-detail1.html">Humlebaek<div class="price">&dollar;25</div></a></h5>
                         <hr>
-                        <h5>Subtotal</h5>
-                        <h5 class="price"> $75</h5>
-                        <h5>Shipping</h5>
-                        <h5 class="price"> $10</h5>
-                        <h5>Taxes</h5>
-                        <h5 class="price"> $12.50</h5>
+                        <h5>Subtotal
+                            <div class="price">&dollar;75</div>
+                        </h5>
+                        <h5>Shipping
+                            <div class="price">&dollar;10</div>
+                        </h5>
+                        <h5>Taxes
+                            <div class="price">&dollar;12&period;50</div>
+                        </h5>
                         <hr>
-                        <h5>Total</h5>
-                        <h5 class="price">$97.50</h5>
+                        <h5>Total
+                            <div class="price">&dollar;97&period;50</div>
+                        </h5>
                     </div>
                 </div>
             </div>
@@ -109,7 +117,7 @@
             <input type="submit" value="Purchase">
         </form>
     </main>
- <footer>
+    <footer>
         <div class="flex-grid-two">
             <div class="col">
                 <ul>
