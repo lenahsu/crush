@@ -13,10 +13,11 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     z-index: 1200;
+    margin-top: 5rem;
 }
 main {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 main a:link,
 main a:visited {
@@ -111,10 +112,10 @@ h2 {
 }
 h3 {
     text-transform: lowercase;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.1rem;
     color: #EE924D;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 h4 {
     text-transform: lowercase;
@@ -129,12 +130,15 @@ h5 {
     margin-bottom: 0;
 }
 h6 {
-    text-transform: none;
+    
     color: black;
     font-size: 0.8rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.03rem;
+    
 }
 p {
-    color: #C5CEDD;
+    color: #8C95A6;
     margin-top: 0rem;
     padding-bottom: 2rem;
     text-align: center;
@@ -151,7 +155,7 @@ hr {
     height: 0;
     width: 30rem;
     border: none;
-    border-bottom: 0.05rem solid #C5CEDD;
+    border-bottom: 0.05rem solid #8C95A6;
     margin-bottom: 2rem;
 }
 
@@ -167,6 +171,7 @@ hr {
     text-decoration: underline;
     color: gray;
 }
+
 img {
     justify-content: center;
     text-align: center;
@@ -179,13 +184,20 @@ ul {
     line-height: 1.5rem;
 }
 
-/*--------------------CHECKOUT PROCESS STYLE--------------------*/
+li{
+    display: inline;
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
+}
+
+/*--------------------CHECKOUT STYLE--------------------*/
 
 .price {
     float: right;
 }
 .order {
     float: right;
+    line-height: 1rem;
 }
 .order hr {
     display: block;
@@ -193,7 +205,19 @@ ul {
     height: 0;
     width: 20rem;
     border: none;
-    border-bottom: 0.1rem solid #C5CEDD;
+    border-bottom: 0.1rem solid #8C95A6;
+}
+
+.order a:link, .order a:visited{
+    color:black;
+    text-decoration:none;
+    
+}
+
+.order a:hover, 
+.order a:active{
+    color: black;
+    text-decoration: underline;
 }
 .checkout-process {
     font-size: 0.08rem;
@@ -203,16 +227,16 @@ ul {
     display: inline;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    color: #C5CEDD;
+    color: #8C95A6;
     line-height: 1rem;
 }
 .checkout-process a:link,
-a:visited {
+.checkout-process a:visited {
     color: black;
     text-decoration: none;
 }
 .checkout-process a:hover,
-a:active {
+.checkout-process a:active {
     color: black;
     text-decoration: underline;
 }
@@ -227,7 +251,7 @@ a:active {
     height: 0;
     width: 35rem;
     border: none;
-    border-bottom: 0.1rem solid #C5CEDD;
+    border-bottom: 0.1rem solid #8C95A6;
     margin-bottom: 2rem;
 }
 .forms [type=text] {
@@ -246,12 +270,20 @@ a:active {
 
 form h5{
     color: gray;
-    padding-left: 1rem;
+    padding-left:1rem;
 }
 
 .forms .shorter-label{
     width: 12rem;
     
+}
+
+.review{
+    padding-left:1rem;
+}
+
+.reccommended{
+    padding-top:4rem;
 }
 
 /*--Buttons--*/
@@ -279,11 +311,7 @@ form h5{
     width: 1rem;
     margin: 1rem;
 }
-[type=number] {
-    width: 1.5rem;
-    height: 1rem;
-    font-size: 0.5rem;
-}
+
 form {
     letter-spacing: 0.05rem;
     text-transform: uppercase;
@@ -315,6 +343,43 @@ form {
     border: none;
 }
 
+
+/*--------CART STYLE-----------*/
+[type=number] {
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.product-info{
+    line-height:0.5rem;
+}
+
+.product-info h4{
+    padding-bottom: 2rem;
+}
+
+.product-info h5{
+    line-height: 0.5rem
+}
+
+.product-info form{
+    margin-top:0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-info a:link, 
+.product-info a:visited{
+    text-decoration: none;
+    color:black;
+}
+
+.product-info a:hover, 
+.product-info a:active{
+    text-decoration: underline;
+    color:black;
+}
 /*-------------------WEBSITE FRAME STYLE------------------*/
 
 .websiteFrame {
@@ -355,3 +420,24 @@ form {
 img {
     max-width: 100%
 }
+
+
+
+
+/*-------------------MEDIA QUERIES FOR FORMS-------------*/
+/*
+@media (max-width: 400px) {
+    .forms [type=text]{
+        width: 45%;
+        }
+        .forms .shorter-forms [type=text]{
+        width: 45%;
+        
+  }
+}
+
+@media (min-width: 700px) {
+    .forms [type=text]{
+        width: 100%;
+  }
+}*/
