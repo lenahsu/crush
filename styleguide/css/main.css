@@ -29,51 +29,183 @@ footer a:focus,
 footer a:active {
     text-decoration: underline;
 }
-footer ul{
+footer ul {
     list-style: none;
 }
 
 /*--------------------NAV STYLE--------------------*/
 
-nav {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.13rem;
-    color: #EE924D;
-    text-align: center;
-}
-nav li {
-    list-style-type: none;
-    display: inline;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-}
-nav a:link,
-nav a:visited {
-    color: #EE924D;
-    text-decoration: none;
-    padding: 1rem;
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px transparent;
+
+/* Screen reader only */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
     overflow: hidden;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: color, background-color;
-    transition-property: color, background-color;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
-nav a:hover,
-a:focus,
-nav a:active {
-    /*    color: ;*/
-    background-color: #EE924D;
-    color: white;
+
+/* Button styling */
+
+.menu-toggle {
+    display: inline-block;
+    padding: .75em 15px;
+    line-height: 1em;
+    font-size: 1rem;
+    color: #333;
 }
-nav h1 {
-    text-transform: capitalize;
-    font-weight: 900;
+.menu-toggle:hover,
+.menu-toggle:focus {
+    color: #EE924D;
+}
+
+/*
+ Default styles + Mobile first
+ Offscreen menu style
+*/
+
+.main-menu {
+    position: absolute;
+    left: -200px;
+    top: 0;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: visible;
+    transition: left 0.5s ease, box-shadow 0.5s ease;
+    z-index: 999;
+}
+.main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 2.5em 0 0;
+    min-height: 100%;
+    width: 200px;
+    background: #EE924D;
+}
+.main-menu a {
+    display: block;
+    padding: 1rem;
+    line-height: 1rem;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+.main-menu a:hover,
+.main-menu a:focus {
+    text-decoration: underline;
+}
+.main-menu .menu-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.main-menu:target,
+.main-menu[aria-expanded="true"] {
+    left: 0;
+    outline: none;
+    -moz-box-shadow: 3px 0 12px rgba(0, 0, 0, .25);
+    -webkit-box-shadow: 3px 0 12px rgba(0, 0, 0, .25);
+    box-shadow: 3px 0 12px rgba(0, 0, 0, .25);
+}
+.main-menu:target .menu-close,
+.main-menu[aria-expanded="true"] .menu-close {
+    z-index: 1001;
+}
+.main-menu:target ul,
+.main-menu[aria-expanded="true"] ul {
+    position: relative;
+    z-index: 1000;
+}
+
+.main-menu:target + .backdrop,
+.main-menu[aria-expanded="true"] + .backdrop {
+    position: absolute;
+    display: block;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    background: #000;
+    background: rgba(0, 0, 0, .50);
+    cursor: default;
+}
+@supports (position: fixed) {
+    .main-menu,
+    .main-menu:target + .backdrop,
+    .main-menu[aria-expanded="true"] + .backdrop {
+        position: fixed;
+    }
+}
+
+/*
+ Larger screen styling
+ Horizontal menu
+*/
+
+@media (min-width: 768px) {
+    .menu-toggle,
+    .main-menu .menu-close {
+        display: none;
+    }
+    /* Undo positioning of off-canvas menu */
+    .main-menu {
+        position: relative;
+        left: auto;
+        top: auto;
+        height: auto;
+    }
+    .main-menu ul {
+        display: flex;
+        justify-content: center;
+        /* Undo off-canvas styling */
+        padding: 0;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        height: auto;
+        width: auto;
+        background: none;
+    }
+    .main-menu li {
+        list-style-type: none;
+        display: inline;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .main-menu a {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.13rem;
+        color: #EE924D;
+        text-align: center;
+        text-decoration: none;
+        padding: 1rem;
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px transparent;
+        overflow: hidden;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: color, background-color;
+        transition-property: color, background-color;
+        border: 0 !important;
+        /* Remove borders from off-canvas styling */
+    }
+    .main-menu a:hover,
+    .main-menu a:focus {
+        background: none;
+        /* Remove background from off-canvas styling */
+        text-decoration: underline;
+    }
 }
 
 /*--------------------TYPE STYLE--------------------*/
@@ -107,8 +239,18 @@ h3 {
 }
 h4 {
     text-transform: lowercase;
-    color: #C5CEDD;
+    color: #8C95A6;
     font-size: 1rem;
+}
+.separator {
+    display: block;
+    position: relative;
+    margin: 1rem auto;
+    height: 0;
+    width: 60%;
+    line-height: 0;
+    border: none;
+    border-bottom: 0.06rem solid #8C95A6;
 }
 
 /*--------------------LINK STYLE--------------------*/
@@ -163,6 +305,8 @@ section {
     width: 1rem;
 }
 
+
+/*-------------------MEDIA QUERIES STYLE------------------*/
 /* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
