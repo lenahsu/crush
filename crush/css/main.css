@@ -13,10 +13,11 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     z-index: 1200;
+    margin-top: 5rem;
 }
 main {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 main a:link,
 main a:visited {
@@ -177,6 +178,12 @@ img {
 ul {
     list-style: none;
     line-height: 1.5rem;
+}
+
+li{
+    display: inline;
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
 }
 
 /*--------------------CHECKOUT PROCESS STYLE--------------------*/
