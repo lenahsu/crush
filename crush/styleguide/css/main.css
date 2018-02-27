@@ -21,6 +21,7 @@ main {
 main a:link,
 main a:visited {
     text-decoration: none;
+    color: white;
 }
 
 /*--------------------FOOTER STYLE--------------------*/
@@ -51,33 +52,11 @@ footer a:active {
 
 /*--------------------NAV STYLE--------------------*/
 
-nav {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.13rem;
-    color: #EE924D;
-    text-align: center;
-}
 nav li {
     list-style-type: none;
     display: inline;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-}
-nav a:link,
-nav a:visited {
-    color: #EE924D;
-    text-decoration: none;
-}
-nav a:hover,
-nav a:focus,
-nav a:active {
-    color: #EE924D;
-    text-decoration: underline;
-}
-nav h1 {
-    text-transform: capitalize;
-    font-weight: 900;
 }
 nav hr {
     display: block;
@@ -89,6 +68,181 @@ nav hr {
     line-height: 0;
     border: none;
     border-bottom: 0.1rem solid #EE924D;
+}
+
+/* Screen reader only */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* Button styling */
+
+.menu-toggle {
+    display: inline-block;
+    padding: .75em 15px;
+    line-height: 1rem;
+    font-size: 1rem;
+}
+
+/*
+ Default styles + Mobile first
+ Offscreen menu style
+*/
+
+.main-menu {
+    position: absolute;
+    left: -200px;
+    top: 0;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: visible;
+    transition: left 0.5s ease, box-shadow 0.5s ease;
+    z-index: 999;
+}
+.main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 2.5rem 0 0;
+    /* Hide shadow w/ -8px while 'closed' */
+    -webkit-box-shadow: -8px 0 8px rgba(0, 0, 0, .5);
+    -moz-box-shadow: -8px 0 8px rgba(0, 0, 0, .5);
+    box-shadow: -8px 0 8px rgba(0, 0, 0, .5);
+    min-height: 100%;
+    width: 200px;
+    background: #EE924D;
+}
+.main-menu a {
+    display: block;
+    padding: .75rem 15px;
+    line-height: 1rem;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+.main-menu a:hover,
+.main-menu a:focus {
+    text-decoration: underline;
+}
+.main-menu .menu-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/*
+ On small devices, allow it to toggle...
+*/
+
+
+/*
+ :target for non-JavaScript
+ aria-expanded="true/false" will be for JavaScript
+*/
+
+.main-menu:target,
+.main-menu[aria-expanded="true"] {
+    left: 0;
+    outline: none;
+    -moz-box-shadow: 3px 0 12px rgba(0, 0, 0, .25);
+    -webkit-box-shadow: 3px 0 12px rgba(0, 0, 0, .25);
+    box-shadow: 3px 0 12px rgba(0, 0, 0, .25);
+}
+.main-menu:target .menu-close,
+.main-menu[aria-expanded="true"] .menu-close {
+    z-index: 1001;
+}
+.main-menu:target ul,
+.main-menu[aria-expanded="true"] ul {
+    position: relative;
+    z-index: 1000;
+}
+
+/* 
+ We could us `.main-menu:target:after`, but
+ it wouldn't be clickable.
+*/
+
+.main-menu:target + .backdrop,
+.main-menu[aria-expanded="true"] + .backdrop {
+    position: absolute;
+    display: block;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    background: #fff;
+    background: rgba(0, 0, 0, .85);
+    cursor: default;
+}
+@supports (position: fixed) {
+    .main-menu,
+    .main-menu:target + .backdrop,
+    .main-menu[aria-expanded="true"] + .backdrop {
+        position: fixed;
+    }
+}
+
+/*
+ Larger screen styling
+ Horizontal menu
+*/
+
+@media (min-width: 768px) {
+    .menu-toggle,
+    .main-menu .menu-close {
+        display: none;
+    }
+    /* Undo positioning of off-canvas menu */
+    .main-menu {
+        position: relative;
+        left: auto;
+        top: auto;
+        height: auto;
+    }
+    .main-menu ul {
+        display: flex;
+                justify-content: center;
+        /* Undo off-canvas styling */
+        padding: 0;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        height: auto;
+        width: auto;
+        background: none;
+    }
+    .main-menu li {
+        list-style-type: none;
+        display: inline;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .main-menu a {
+        border: 0 !important;
+        /* Remove borders from off-canvas styling */
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.13rem;
+        color: #EE924D;
+        text-align: center;
+        text-decoration: none;
+    }
+    .main-menu a:hover,
+    .main-menu a:focus {
+        background: none;
+        /* Remove background from off-canvas styling */
+        text-decoration: underline;
+    }
 }
 
 /*--------------------BODY STYLE--------------------*/
@@ -206,12 +360,12 @@ ul {
     line-height: 1rem;
 }
 .checkout-process a:link,
-a:visited {
+.checkout-process a:visited {
     color: black;
     text-decoration: none;
 }
 .checkout-process a:hover,
-a:active {
+.checkout-process a:active {
     color: black;
     text-decoration: underline;
 }
@@ -242,15 +396,12 @@ a:active {
     display: block;
     border: none;
 }
-
-form h5{
+form h5 {
     color: gray;
     padding-left: 1rem;
 }
-
-.forms .shorter-label{
+.forms .shorter-label {
     width: 12rem;
-    
 }
 
 /*--Buttons--*/
@@ -353,4 +504,145 @@ form {
 
 img {
     max-width: 100%
+}
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    header {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        background-color: #FDFAFB;
+        text-align: center;
+        font-size: 2rem;
+        color: #EE924D;
+        letter-spacing: 0.4rem;
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        z-index: 800;
+        justify-content: center;
+    }
+}
+
+
+
+    /*---------------------------------------MEDIA QUERIES------------------------------------------*/
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /*--------------------HEADER STYLE--------------------*/
+    header {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        background-color: #FDFAFB;
+        text-align: center;
+        font-size: 2rem;
+        color: #EE924D;
+        letter-spacing: 0.4rem;
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        z-index: 800;
+        justify-content: center;
+    }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        background-color: #FDFAFB;
+        text-align: center;
+        font-size: 1.75rem;
+        color: #EE924D;
+        letter-spacing: 0.4rem;
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        z-index: 800;
+        justify-content: center;
+    }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    header {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        background-color: #FDFAFB;
+        text-align: center;
+        font-size: 1.50rem;
+        color: #EE924D;
+        letter-spacing: 0.4rem;
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        z-index: 800;
+        justify-content: center;
+    }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    header {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        background-color: #FDFAFB;
+        text-align: center;
+        font-size: 1.25rem;
+        color: #EE924D;
+        letter-spacing: 0.4rem;
+        line-height: 2.8rem;
+        margin: 1rem;
+        padding: 2rem 2rem 2rem 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        z-index: 800;
+        justify-content: center;
+    }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    header {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        background-color: #FDFAFB;
+        text-align: center;
+        font-size: 1rem;
+        color: #EE924D;
+        letter-spacing: 0.4rem;
+        line-height: 2.3rem;
+        margin: 1rem;
+        padding: 2rem 2rem 2rem 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        z-index: 800;
+        justify-content: center;
+    }
 }
