@@ -148,6 +148,7 @@ p {
 .bio {
     text-align: left;
     line-height: normal;
+    width:40%;
 }
 hr {
     display: block;
