@@ -240,11 +240,15 @@ li{
     color: black;
     text-decoration: underline;
 }
-.checkout-forms {
+
+/*----------FORMS---------------*/
+
+
+.form-fields {
     float: left;
     padding-right: 8rem;
 }
-.checkout-forms hr {
+.form-fields hr {
     display: block;
     position: relative;
     float: left;
@@ -254,7 +258,7 @@ li{
     border-bottom: 0.1rem solid #8C95A6;
     margin-bottom: 2rem;
 }
-.forms [type=text] {
+form [type=text] {
     text-align: center;
     letter-spacing: 0.05rem;
     text-transform: uppercase;
@@ -273,7 +277,7 @@ form h5{
     padding-left:1rem;
 }
 
-.forms .shorter-label{
+form .shorter-label{
     width: 12rem;
     
 }
@@ -284,6 +288,12 @@ form h5{
 
 .reccommended{
     padding-top:4rem;
+}
+
+form {
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    font-size: 0.08rem;
 }
 
 /*--Buttons--*/
@@ -312,11 +322,7 @@ form h5{
     margin: 1rem;
 }
 
-form {
-    letter-spacing: 0.05rem;
-    text-transform: uppercase;
-    font-size: 0.08rem;
-}
+
 
 /*CRITIQUE FORM STYLE*/
 
