@@ -18,12 +18,12 @@
         <h1>CRUSH STYLEGUIDE</h1>
         <a href="#main-menu" class="menu-toggle" role="button" id="main-menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Open main menu">
             <span class="sr-only">Open main menu</span>
-            <img src="/crush/img/nav-items/Hamburger.png" aria-hidden="true">
+            <img src="/crush/img/nav-items/Hamburger.png" aria-hidden="true"  alt="hamburger menu icon">
         </a>
-        <nav id="main-menu" class="main-menu" role="navigation" aria-expanded="false" aria-label="Main menu">
+        <nav id="main-menu" class="main-menu" aria-expanded="false" aria-label="Main menu">
             <a href="#main-menu-toggle" class="menu-close" role="button" id="main-menu-close" aria-expanded="false" aria-controls="main-menu" aria-label="Close main menu">
                 <span class="sr-only">Close main menu</span>
-                <img src="/crush/img/nav-items/Close.png" aria-hidden="true">
+                <img src="/crush/img/nav-items/Close.png" alt="close menu icon">
             </a>
             <ul>
                 <li><a href="../index.html">Home</a></li>
@@ -35,7 +35,7 @@
             </ul>
             <hr>
         </nav>
-        <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+        <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true"></a>
 
     </header>
 
@@ -80,10 +80,9 @@
 
         <h3>Submit/Reset Buttons</h3>
         <h4> Css Selector&colon; button &period;submit&comma; button &period;add&hyphen;cart&comma; button &period;reset </h4>
-        <form><input action="#" type="submit" value="Submit">
+        <form action="#"><input type="submit" value="Submit">
             <input type="submit" value="Add to Cart">
             <input type="submit" value="Reset"></form>
-        </form>
 
 
         <h5> Sample Code&colon;</h5>
@@ -290,7 +289,7 @@
             </code>
                 </section>
 
-                <!---------------------------GRID STRUCTURE SECTION------------------------------->
+                <!--GRID STRUCTURE SECTION-->
                 <section>
 
                     <h3>Grid Structure</h3>
@@ -318,29 +317,29 @@
                     <h3>Sample Code&colon;</h3>
 
                     <code>
-              &lt;div class&equal;&quot;flex&hyphen;grid&hyphen;one&quot;&gt;
-                        &lt;div class&equal;&quot;col&quot;&gt;This is 1&sol;1&lt;&sol;div&gt;
+              &lt;div class&equals;&quot;flex&hyphen;grid&hyphen;one&quot;&gt;
+                        &lt;div class&equals;&quot;col&quot;&gt;This is 1&sol;1&lt;&sol;div&gt;
                     &lt;&sol;div&gt;
-                    &lt;div class&equal;&quot;flex&hyphen;grid&hyphen;two&quot;&gt;
-                        &lt;div class&equal;&quot;col&quot;&gt;This is 1&sol;2 &lt;&sol;div&gt;
-                        &lt;div class&equal;&quot;col&quot;&gt;This is 2&sol;2 &lt;&sol;div&gt;
+                    &lt;div class&equals;&quot;flex&hyphen;grid&hyphen;two&quot;&gt;
+                        &lt;div class&equals;&quot;col&quot;&gt;This is 1&sol;2 &lt;&sol;div&gt;
+                        &lt;div class&equals;&quot;col&quot;&gt;This is 2&sol;2 &lt;&sol;div&gt;
                     &lt;&sol;div&gt;
-                    &lt;div class&equal;&quot;flex&hyphen;grid&hyphen;three&quot;&gt;
-                        &lt;div class&equal;&quot;col&quot;&gt;This is 1&sol;3 &lt;&sol;div&gt;
-                        &lt;div class&equal;&quot;col&quot;&gt;This is 2&sol;3 &lt;&sol;div&gt;
-                        &lt;div class&equal;&quot;col&quot;&gt;This is 3&sol;3 &lt;&sol;div&gt;
+                    &lt;div class&equals;&quot;flex&hyphen;grid&hyphen;three&quot;&gt;
+                        &lt;div class&equals;&quot;col&quot;&gt;This is 1&sol;3 &lt;&sol;div&gt;
+                        &lt;div class&equals;&quot;col&quot;&gt;This is 2&sol;3 &lt;&sol;div&gt;
+                        &lt;div class&equals;&quot;col&quot;&gt;This is 3&sol;3 &lt;&sol;div&gt;
                     &lt;&sol;div&gt;
-                    &lt;div class&equal;&quot;flex&hyphen;grid&hyphen;four&quot;&gt;
-                        &lt;div class&equal;&quot;col&quot;&gt;This is 1&sol;4 &lt;&sol;div&gt;
-                        &lt;div class&equal;&quot;col&quot;&gt;This is 2&sol;4 &lt;&sol;div&gt;
-                        &lt;div class&equal;&quot;col&quot;&gt;This is 3&sol;4 &lt;&sol;div&gt;
-                        &lt;div class&equal;&quot;col&quot;&gt;This is 4&sol;4 &lt;&sol;div&gt;
+                    &lt;div class&equals;&quot;flex&hyphen;grid&hyphen;four&quot;&gt;
+                        &lt;div class&equals;&quot;col&quot;&gt;This is 1&sol;4 &lt;&sol;div&gt;
+                        &lt;div class&equals;&quot;col&quot;&gt;This is 2&sol;4 &lt;&sol;div&gt;
+                        &lt;div class&equals;&quot;col&quot;&gt;This is 3&sol;4 &lt;&sol;div&gt;
+                        &lt;div class&equals;&quot;col&quot;&gt;This is 4&sol;4 &lt;&sol;div&gt;
                     &lt;&sol;div&gt;
             </code>
                 </section>
 
 
-                <!-------------------------------COLOUR PALETTE SECTION-------------------------------->
+                <!--COLOUR PALETTE SECTION-->
 
                 <h3>Colour Palette</h3>
                   <h4>CSS Selector&colon; &period;container p </h4>
@@ -375,9 +374,9 @@
             <div class="col">
                 <div class="flex-grid-three">
 
-                    <a href="#"><img src="img/social-media/facebook-icon.png"></a>
-                    <a href="#"><img src="img/social-media/twitter-icon.png"></a>
-                    <a href="#"><img src="img/social-media/instagram-icon.png"></a>
+                    <a href="#"><img src="img/social-media/facebook-icon.png" alt="Facebook Link"></a>
+                    <a href="#"><img src="img/social-media/twitter-icon.png" alt="Twitter Link"></a>
+                    <a href="#"><img src="img/social-media/instagram-icon.png" alt="Instagram Link"></a>
                 </div>
             </div>
         </div>
