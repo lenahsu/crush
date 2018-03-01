@@ -261,7 +261,7 @@ h4 {
 }
 h5 {
     text-transform: uppercase;
-    color: #C5CEDD;
+    color: #EE924D;
     letter-spacing: 0.1rem;
     font-size: 0.5rem;
     margin-bottom: 0;
@@ -293,22 +293,28 @@ hr {
     margin-bottom: 2rem;
 }
 
-/*----------------- PRODUCT LISTING --------------------*/
 
-#product-listing {
+/*----------------- PRODUCT LISTING SHOP--------------------*/
+
+#product-listing h5{
     line-height: 0.2rem;
 }
-#product-listing a:link {
+
+#product-listing a:link,
+#product-listing a:visited{
     text-decoration: none;
 }
-#product-listing a:hover {
+#product-listing a:hover, 
+#product-listing a:active{
     text-decoration: underline;
     color: gray;
 }
+
 img {
     justify-content: center;
     text-align: center;
 }
+
 
 /*--------------------LIST STYLE--------------------*/
 

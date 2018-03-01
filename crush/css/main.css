@@ -116,6 +116,7 @@ nav hr {
     overflow-x: visible;
     transition: left 0.5s ease, box-shadow 0.5s ease;
     z-index: 999;
+    
 }
 .main-menu ul {
     list-style: none;
@@ -136,11 +137,14 @@ nav hr {
     font-size: 1rem;
     color: #fff;
     text-decoration: none;
+    text-transform:lowercase;
+    letter-spacing: 0.1rem;
 }
 .main-menu a:hover,
 .main-menu a:focus {
     text-decoration: underline;
 }
+
 .main-menu .menu-close {
     position: absolute;
     right: 0;
@@ -328,19 +332,19 @@ hr {
 
 /*----------------- PRODUCT LISTING --------------------*/
 
-#product-listing {
+.product-listing {
     line-height: 0.2rem;
 }
 
-#product-listing a:link {
+.product-listing a:link {
     text-decoration: none;
 }
 
-#product-listing a:hover {
+.product-listing a:hover {
     text-decoration: underline;
     color: gray;
 }
-#product-listing img {
+.product-listing img {
     height: 250px;
 }
 img {
