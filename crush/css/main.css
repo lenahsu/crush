@@ -465,7 +465,7 @@ form {
     background: #C5CEDD;
     color: white;
 }
-[type=checkbox] {
+[type=radio] {
     letter-spacing: 0.05rem;
     background-color: #C5CEDD;
     height: 1rem;
