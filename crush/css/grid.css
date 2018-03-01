@@ -34,13 +34,6 @@
     flex-wrap: wrap;
     margin-bottom: 1rem;
 }
-.flex-grid-three .col {
-    width: 30%;
-}
-.flex-grid-three .col-two-of-three {
-    width: 60%;
-    background: gray;
-}
 
 /*--------------4 COLUMN GRID--------------*/
 
