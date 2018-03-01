@@ -26,7 +26,6 @@ main {
     margin-left: 15%;
     margin-right: 15%;
 }
-
 main a:link,
 main a:visited {
     text-decoration: none;
@@ -46,14 +45,12 @@ footer {
     padding: 3rem 3rem;
     margin-top: 2rem;
 }
-
 footer a:link,
 footer a:visited {
     font-size: 1rem;
     color: white;
     text-decoration: none;
 }
-
 footer a:hover,
 footer a:focus,
 footer a:active {
@@ -116,7 +113,6 @@ nav hr {
     overflow-x: visible;
     transition: left 0.5s ease, box-shadow 0.5s ease;
     z-index: 999;
-    
 }
 .main-menu ul {
     list-style: none;
@@ -137,14 +133,13 @@ nav hr {
     font-size: 1rem;
     color: #fff;
     text-decoration: none;
-    text-transform:lowercase;
+    text-transform: lowercase;
     letter-spacing: 0.1rem;
 }
 .main-menu a:hover,
 .main-menu a:focus {
     text-decoration: underline;
 }
-
 .main-menu .menu-close {
     position: absolute;
     right: 0;
@@ -180,13 +175,6 @@ nav hr {
     background: #fff;
     background: rgba(0, 0, 0, .85);
     cursor: default;
-}
-@supports (position: fixed) {
-    .main-menu,
-    .main-menu:target + .backdrop,
-    .main-menu[aria-expanded="true"] + .backdrop {
-        position: fixed;
-    }
 }
 
 /*
@@ -251,7 +239,6 @@ body {
     line-height: 1.5rem;
     letter-spacing: 0.04rem;
 }
-
 h2 {
     letter-spacing: 0.06rem;
     color: black;
@@ -261,7 +248,6 @@ h2 {
     padding-bottom: 2rem;
     padding-top: 1rem;
 }
-
 h3 {
     text-transform: lowercase;
     letter-spacing: 0.1rem;
@@ -271,13 +257,11 @@ h3 {
     width: 60%;
     line-height: 2.5rem;
 }
-
 h4 {
     text-transform: lowercase;
     color: #555F72;
     font-size: 1.5rem;
 }
-
 h5 {
     text-transform: uppercase;
     color: #555F72;
@@ -285,7 +269,6 @@ h5 {
     font-size: 0.5rem;
     margin-bottom: 0;
 }
-
 h6 {
     color: black;
     font-size: 0.8rem;
@@ -308,7 +291,6 @@ p {
     letter-spacing: 0.04rem;
     text-transform: none;
 }
-
 .descr {
     text-align: left;
     line-height: normal;
@@ -319,7 +301,6 @@ p {
     line-height: normal;
     width: 50%
 }
-
 hr {
     display: block;
     position: relative;
@@ -335,11 +316,9 @@ hr {
 .product-listing {
     line-height: 0.2rem;
 }
-
 .product-listing a:link {
     text-decoration: none;
 }
-
 .product-listing a:hover {
     text-decoration: underline;
     color: gray;
@@ -370,12 +349,10 @@ li {
 .price {
     float: right;
 }
-
 .order {
     float: right;
     line-height: 1rem;
 }
-
 .order hr {
     display: block;
     position: relative;
@@ -394,7 +371,6 @@ li {
     color: black;
     text-decoration: underline;
 }
-
 .checkout-process {
     font-size: 0.08rem;
     letter-spacing: 0.1rem;
@@ -406,13 +382,11 @@ li {
     color: #8C95A6;
     line-height: 1rem;
 }
-
 .checkout-process a:link,
 .checkout-process a:visited {
     color: black;
     text-decoration: none;
 }
-
 .checkout-process a:hover,
 .checkout-process a:active {
     color: black;
@@ -424,7 +398,6 @@ li {
 .form-fields {
     float: left;
 }
-
 .form-fields hr {
     display: block;
     position: relative;
@@ -435,9 +408,9 @@ li {
     border-bottom: 0.1rem solid #8C95A6;
     margin-bottom: 2rem;
 }
-
-form [type=text] {
-    text-align: center;
+form [type=text],
+form textarea {
+    text-align: left;
     letter-spacing: 0.05rem;
     text-transform: uppercase;
     font-size: 0.08rem;
@@ -449,20 +422,21 @@ form [type=text] {
     display: block;
     border: none;
 }
+
+
+form textarea{
+    height: 10rem;
+}
 form h5 {
     color: gray;
     padding-left: 1rem;
 }
-
 form .shorter-label {
     width: 40%;
-
 }
-
 .review {
     padding-left: 1rem;
 }
-
 .reccommended {
     padding-top: 4rem;
 }
@@ -470,6 +444,7 @@ form {
     letter-spacing: 0.05rem;
     text-transform: uppercase;
     font-size: 0.08rem;
+    
 }
 
 /*--Buttons--*/
@@ -486,12 +461,10 @@ form {
     display: block;
     border: 0.05rem solid #C5CEDD;
 }
-
 [type=submit]:hover {
     background: #C5CEDD;
     color: white;
 }
-
 [type=checkbox] {
     letter-spacing: 0.05rem;
     background-color: #C5CEDD;
@@ -569,28 +542,24 @@ form {
     z-index: 1500;
     background-color: #EE924D;
 }
-
 #websiteFrameTop {
     top: 0;
     left: 0;
     width: 100%;
     height: 1rem;
 }
-
 #websiteFrameRight {
     top: 0;
     bottom: 0;
     right: 0;
     width: 1rem;
 }
-
 #websiteFrameBottom {
     bottom: 0;
     left: 0;
     width: 100%;
     height: 1rem;
 }
-
 #websiteFrameLeft {
     top: 0;
     bottom: 0;
@@ -603,10 +572,10 @@ form {
 #recs img {
     height: 110px;
     padding: 0.5rem;
-    
 }
 
 /*-------------------IMG STYLES------------------*/
+
 
 /*makes images responsive*/
 
@@ -617,17 +586,16 @@ img {
 /*-------------------MEDIA QUERIES FOR FORMS-------------*/
 
 @media (max-width: 400px) {
-    .form-fields [type=text]{
+    .form-fields [type=text] {
         width: 100%;
-         }
-    #ship [type=text]  {
-        width:130%;
-        
     }
-  } 
+    #ship [type=text] {
+        width: 130%;
+    }
+}
 
+/*---------------------------------------MEDIA QUERIES------------------------------------------*/
 
-    /*---------------------------------------MEDIA QUERIES------------------------------------------*/
 
 /* 
   ##Device = Desktops
@@ -740,41 +708,28 @@ img {
         z-index: 800;
         justify-content: center;
     }
-
-
-
     /*---------FORMS-------------*/
-    .form-fields [type=text] {
+    .form-fields [type=text],form textarea{
         width: 25rem;
     }
-
     #payment hr {
         width: 100%;
     }
-    
-    #payment [type=text]{
+    #payment [type=text] {
         width: 90%;
     }
-
     #billing hr {
         width: 90%;
     }
-
     #billing [type=text] {
         width: 160%;
-
     }
-
     #shipping [type=text] {
         width: 210%;
     }
-
     #shipping hr {
         width: 230%;
     }
-
-
-
 }
 
 /* 
@@ -799,32 +754,23 @@ img {
         z-index: 800;
         justify-content: center;
     }
-
     /*---------FORMS-------------*/
-    .form-fields [type=text] {
+    .form-fields [type=text], form textarea{
         width: 15rem;
     }
-
     #payment hr {
         width: 100%
     }
-
-
     #billing hr {
         width: 100%
     }
-
     #billing [type=text] {
         width: 110%;
     }
-
     #shipping [type=text] {
         width: 130%;
     }
     #shipping hr {
         width: 160%;
-
     }
-}
-
 }
