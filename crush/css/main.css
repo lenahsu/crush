@@ -434,19 +434,13 @@ img {
 
 
 /*-------------------MEDIA QUERIES FOR FORMS-------------*/
-/*
-@media (max-width: 400px) {
-    .forms [type=text]{
-        width: 45%;
-        }
-        .forms .shorter-forms [type=text]{
-        width: 45%;
-        
-  }
-}
 
-@media (min-width: 700px) {
-    .forms [type=text]{
+@media (max-width: 400px) {
+    .form-fields [type=text]{
         width: 100%;
-  }
-}*/
+         }
+    #ship [type=text]  {
+        width:130%;
+        
+    }
+  } 
