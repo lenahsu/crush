@@ -15,6 +15,12 @@ header {
     z-index: 1200;
     margin-top: 5rem;
 }
+.header-logo a {
+    color: #EE924D;
+    text-decoration: none;
+}
+
+/*--------------------MAIN STYLE--------------------*/
 
 main {
     margin-left: 15%;
@@ -282,7 +288,7 @@ h6 {
     line-height: 1.2rem;
     letter-spacing: 0.03rem;
 }
-h1 a:visited {
+main h1 a:visited {
     color: black;
 }
 p {
