@@ -325,19 +325,19 @@ hr {
 
 /*----------------- PRODUCT LISTING --------------------*/
 
-#product-listing {
+.product-listing {
     line-height: 0.2rem;
 }
 
-#product-listing a:link {
+.product-listing a:link {
     text-decoration: none;
 }
 
-#product-listing a:hover {
+.product-listing a:hover {
     text-decoration: underline;
     color: gray;
 }
-#product-listing img {
+.product-listing img {
     height: 250px;
 }
 img {
