@@ -507,6 +507,8 @@ img {
 }
 
 
+    /*---------------------------------------MEDIA QUERIES------------------------------------------*/
+
 /* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
@@ -529,9 +531,6 @@ img {
     }
 }
 
-
-
-    /*---------------------------------------MEDIA QUERIES------------------------------------------*/
 /* 
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
