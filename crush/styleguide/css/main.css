@@ -134,18 +134,8 @@ nav hr {
 .main-menu .menu-close {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 1rem;
 }
-
-/*
- On small devices, allow it to toggle...
-*/
-
-
-/*
- :target for non-JavaScript
- aria-expanded="true/false" will be for JavaScript
-*/
 
 .main-menu:target,
 .main-menu[aria-expanded="true"] {
@@ -164,11 +154,6 @@ nav hr {
     position: relative;
     z-index: 1000;
 }
-
-/* 
- We could us `.main-menu:target:after`, but
- it wouldn't be clickable.
-*/
 
 .main-menu:target + .backdrop,
 .main-menu[aria-expanded="true"] + .backdrop {

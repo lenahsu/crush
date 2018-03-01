@@ -14,24 +14,36 @@
 </head>
 
 <body>
-    <header>
-        <h1> CRUSH </h1>
-        <nav>
+      <header>
+        <div class="flex-grid-one">
+            <h1>CRUSH</h1>
+        </div>
+       <a href="#main-menu" class="menu-toggle" role="button" id="main-menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Open main menu">
+            <span class="sr-only">Open main menu</span>
+            <img src="/crush/img/nav-items/Hamburger.png" aria-hidden="true">
+        </a>
+
+        <nav id="main-menu" class="main-menu" role="navigation" aria-expanded="false" aria-label="Main menu">
+            <a href="#main-menu-toggle" class="menu-close" role="button" id="main-menu-close" aria-expanded="false" aria-controls="main-menu" aria-label="Close main menu">
+                <span class="sr-only">Close main menu</span>
+                <img src="/crush/img/nav-items/Close.png" aria-hidden="true">
+            </a>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="critique.html">Critique</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="cart.html">Cart</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../shop.html">Shop</a></li>
+                <li><a href="../events.html">Events</a></li>
+                <li><a href="../critique.html">Critique</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../cart.html">Cart</a></li>
             </ul>
-            <hr>
         </nav>
+        <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
     </header>
+    
     <main>
         <div class="flex-grid-two">
             <div class="col">
-                <img src="img/vancouver-photo-walk.jpg">
+                <img src="img/events/vancouver-photo-walk.jpg">
             </div>
 
             <div class="col">
@@ -47,7 +59,7 @@
 
                 <p class="descr">Join us for a nice walk in historic Gastown to take some photos, hang out, give each other tips, share equipment, and have Dinner at Meet on Main!</p>
 
-                <form action="cart.html">
+                <form action="#">
                     <input type="submit" value="RSVP">
                 </form>
 

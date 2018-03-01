@@ -15,8 +15,19 @@
 
 <body>
     <header>
-        <h1> CRUSH </h1>
-        <nav>
+        <div class="flex-grid-one">
+            <h1>CRUSH</h1>
+        </div>
+        <a href="#main-menu" class="menu-toggle" role="button" id="main-menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Open main menu">
+            <span class="sr-only">Open main menu</span>
+            <img src="/crush/img/nav-items/Hamburger.png" aria-hidden="true">
+        </a>
+
+        <nav id="main-menu" class="main-menu" role="navigation" aria-expanded="false" aria-label="Main menu">
+            <a href="#main-menu-toggle" class="menu-close" role="button" id="main-menu-close" aria-expanded="false" aria-controls="main-menu" aria-label="Close main menu">
+                <span class="sr-only">Close main menu</span>
+                <img src="/crush/img/nav-items/Close.png" aria-hidden="true">
+            </a>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
@@ -25,9 +36,10 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="cart.html">Cart</a></li>
             </ul>
-            <hr>
         </nav>
+        <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
     </header>
+
     <main>
         <div class="flex-grid-one">
             <h2>Upcoming Events</h2>
@@ -36,10 +48,10 @@
         <div class="flex-grid-two">
             <div class="col">
                 <a href="photo-walk.html">
-                    <img src="img/vancouver-photo-walk.jpg"> </a>
+                    <img src="img/events/vancouver-photo-walk.jpg"> </a>
             </div>
             <div class="col">
-                <a href="photo-walk.html">
+                <a href="img/events/photo-walk.html">
                     <h3>Photo Walk in Gastown</h3></a>
                 <h5>Crush x Red Academy</h5>
                 <p class="descr">Come with your camera and a keen eye, and join us for a walk through historic Gastown. Make friends with fellow photogrphers, and learn tips and tricks along the way.</p>
@@ -49,20 +61,19 @@
         <div class="flex-grid-two">
             <div class="col">
                 <a href="photo-walk.html">
-                    <img src="img/free-art-class.jpeg"> </a>
+                    <img src="img/events/free-art-class.jpeg"> </a>
             </div>
             <div class="col">
                 <a href="photo-walk.html">
                     <h3>Free Drawing Class</h3></a>
                 <h5>REM studios</h5>
                 <p class="descr">Have you always wanted to brush up on your drawing skills? Do you feel like you art has hit a plateau? Come join us for this free art class taught by professional artist Rochelle Maeda!</p>
+
             </div>
         </div>
-
-
     </main>
 
- <footer>
+    <footer>
         <div class="flex-grid-two">
             <div class="col">
                 <ul>
