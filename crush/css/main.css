@@ -344,6 +344,17 @@ li {
     padding-left: 0.3rem;
 }
 
+
+----------------EVENT LISTING-------------------
+
+.event a:link {
+    text-decoration: none;
+}
+.event a:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
 /*--------------------CHECKOUT STYLE--------------------*/
 
 .price {
