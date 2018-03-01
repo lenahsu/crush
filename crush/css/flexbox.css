@@ -1,92 +1,74 @@
-
-*, *::after, *::before {
-	box-sizing: border-box;
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
 }
 
 .flex-grid-two {
 
-	
-	display: -webkit-flex; 
-	display: -ms-flex;
-	display: flex;
 
-	-webkit-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
 
-	-webkit-justify-content: space-around;
-	-ms-justify-content: space-around;
-	justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    -webkit-justify-content: space-around;
+    -ms-justify-content: space-around;
+    justify-content: space-around;
 
 }
 
 
 .flex-grid-two {
 
-	
-	display: -webkit-flex; 
-	display: -ms-flex;
-	display: flex;
 
-	-webkit-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
 
-	-webkit-justify-content: space-around;
-	-ms-justify-content: space-around;
-	justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    -webkit-justify-content: space-around;
+    -ms-justify-content: space-around;
+    justify-content: space-around;
 
 }
 
 .flex-grid-three {
 
-	
-	display: -webkit-flex; 
-	display: -ms-flex;
-	display: flex;
 
-	-webkit-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
 
-	-webkit-justify-content: space-around;
-	-ms-justify-content: space-around;
-	justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 
-}
-
-.flex-grid-seven {
-
-	
-	display: -webkit-flex; 
-	display: -ms-flex;
-	display: flex;
-
-	-webkit-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-
-	-webkit-justify-content: space-around;
-	-ms-justify-content: space-around;
-	justify-content: space-around;
+    -webkit-justify-content: space-around;
+    -ms-justify-content: space-around;
+    justify-content: space-around;
 
 }
 
 
 /*------PRODUCT LISTING IMAGES FLEXBOX--------*/
+
+
 .col {
-	-webkit-flex: 1 1 400px;
-	-ms-flex: 1 1 400px;
-	flex: 1 1 400px;
+  -webkit-flex: 1 1;
+  -ms-flex: 1 1;
+  flex: 1 1;
+    margin: 1rem;
 }
 
-/*
-@media (min-width: 50.25em) {
-	.box-item-image {
-		-webkit-order: 2;
-		-ms-order: 2;
-		order: 2;
-	}
-
+#product-listing img{
+    height: 300px;
+    
 }
-*/
+
