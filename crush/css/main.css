@@ -15,10 +15,12 @@ header {
     z-index: 1200;
     margin-top: 5rem;
 }
+
 main {
     margin-left: 15%;
     margin-right: 15%;
 }
+
 main a:link,
 main a:visited {
     text-decoration: none;
@@ -38,12 +40,14 @@ footer {
     padding: 3rem 3rem;
     margin-top: 2rem;
 }
+
 footer a:link,
 footer a:visited {
     font-size: 1rem;
     color: white;
     text-decoration: none;
 }
+
 footer a:hover,
 footer a:focus,
 footer a:active {
@@ -59,27 +63,32 @@ nav {
     color: #EE924D;
     text-align: center;
 }
+
 nav li {
     list-style-type: none;
     display: inline;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
+
 nav a:link,
 nav a:visited {
     color: #EE924D;
     text-decoration: none;
 }
+
 nav a:hover,
 nav a:focus,
 nav a:active {
     color: #EE924D;
     text-decoration: underline;
 }
+
 nav h1 {
     text-transform: capitalize;
     font-weight: 900;
 }
+
 nav hr {
     display: block;
     position: relative;
@@ -101,6 +110,7 @@ body {
     line-height: 1.5rem;
     letter-spacing: 0.04rem;
 }
+
 h2 {
     letter-spacing: 0.06rem;
     color: black;
@@ -110,6 +120,7 @@ h2 {
     padding-bottom: 2rem;
     padding-top: 1rem;
 }
+
 h3 {
     text-transform: lowercase;
     letter-spacing: 0.1rem;
@@ -117,13 +128,15 @@ h3 {
     font-weight: 400;
     font-size: 2rem;
     width: 60%;
-        line-height:2.5rem;
+    line-height: 2.5rem;
 }
+
 h4 {
     text-transform: lowercase;
     color: #555F72;
     font-size: 1.5rem;
 }
+
 h5 {
     text-transform: uppercase;
     color: #555F72;
@@ -131,14 +144,16 @@ h5 {
     font-size: 0.5rem;
     margin-bottom: 0;
 }
+
 h6 {
-    
+
     color: black;
     font-size: 0.8rem;
     line-height: 1.2rem;
     letter-spacing: 0.03rem;
-    
+
 }
+
 p {
     color: #8C95A6;
     margin-top: 0rem;
@@ -146,21 +161,22 @@ p {
     text-align: center;
     font-size: 0.8rem;
     width: 100%;
-    letter-spacing:0.04rem;
+    letter-spacing: 0.04rem;
     text-transform: none;
 }
+
 .descr {
     text-align: left;
     line-height: normal;
-    width:90%;
+    width: 90%;
 }
 
-.bio{
-    text-align:left;
+.bio {
+    text-align: left;
     line-height: normal;
     width: 50%
-    
 }
+
 hr {
     display: block;
     position: relative;
@@ -176,15 +192,17 @@ hr {
 #product-listing {
     line-height: 0.2rem;
 }
+
 #product-listing a:link {
     text-decoration: none;
 }
+
 #product-listing a:hover {
     text-decoration: underline;
     color: gray;
 }
 
-#product-listing img{
+#product-listing img {
     height: 250px;
 }
 
@@ -201,7 +219,7 @@ ul {
     line-height: 1.5rem;
 }
 
-li{
+li {
     display: inline;
     padding-right: 0.3rem;
     padding-left: 0.3rem;
@@ -212,10 +230,12 @@ li{
 .price {
     float: right;
 }
+
 .order {
     float: right;
     line-height: 1rem;
 }
+
 .order hr {
     display: block;
     position: relative;
@@ -225,17 +245,19 @@ li{
     border-bottom: 0.1rem solid #8C95A6;
 }
 
-.order a:link, .order a:visited{
-    color:black;
-    text-decoration:none;
-    
+.order a:link,
+.order a:visited {
+    color: black;
+    text-decoration: none;
+
 }
 
-.order a:hover, 
-.order a:active{
+.order a:hover,
+.order a:active {
     color: black;
     text-decoration: underline;
 }
+
 .checkout-process {
     font-size: 0.08rem;
     letter-spacing: 0.1rem;
@@ -247,11 +269,13 @@ li{
     color: #8C95A6;
     line-height: 1rem;
 }
+
 .checkout-process a:link,
 .checkout-process a:visited {
     color: black;
     text-decoration: none;
 }
+
 .checkout-process a:hover,
 .checkout-process a:active {
     color: black;
@@ -260,10 +284,10 @@ li{
 
 /*----------FORMS---------------*/
 
-
 .form-fields {
     float: left;
 }
+
 .form-fields hr {
     display: block;
     position: relative;
@@ -274,6 +298,7 @@ li{
     border-bottom: 0.1rem solid #8C95A6;
     margin-bottom: 2rem;
 }
+
 form [type=text] {
     text-align: center;
     letter-spacing: 0.05rem;
@@ -288,22 +313,22 @@ form [type=text] {
     border: none;
 }
 
-form h5{
+form h5 {
     color: gray;
-    padding-left:1rem;
+    padding-left: 1rem;
 }
 
-form .shorter-label{
-    width: 12rem;
-    
+form .shorter-label {
+    width: 40%;
+
 }
 
-.review{
-    padding-left:1rem;
+.review {
+    padding-left: 1rem;
 }
 
-.reccommended{
-    padding-top:4rem;
+.reccommended {
+    padding-top: 4rem;
 }
 
 form {
@@ -326,10 +351,12 @@ form {
     display: block;
     border: 0.05rem solid #C5CEDD;
 }
+
 [type=submit]:hover {
     background: #C5CEDD;
     color: white;
 }
+
 [type=checkbox] {
     letter-spacing: 0.05rem;
     background-color: #C5CEDD;
@@ -343,6 +370,7 @@ form {
 
 
 /*--------CART STYLE-----------*/
+
 [type=number] {
     width: 2rem;
     height: 2rem;
@@ -350,35 +378,36 @@ form {
     text-align: center;
 }
 
-.product-info{
-    line-height:0.5rem;
-    margin-bottom:3rem;
+.product-info {
+    line-height: 0.5rem;
+    margin-bottom: 3rem;
 }
 
-.product-info h4{
+.product-info h4 {
     padding-bottom: 2rem;
 }
 
-.product-info h5{
+.product-info h5 {
     line-height: 0.5rem
 }
 
-.product-info form{
-    margin-top:0.5rem;
+.product-info form {
+    margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
 
-.product-info a:link, 
-.product-info a:visited{
+.product-info a:link,
+.product-info a:visited {
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
-.product-info a:hover, 
-.product-info a:active{
+.product-info a:hover,
+.product-info a:active {
     text-decoration: underline;
-    color:black;
+    color: black;
 }
+
 /*-------------------WEBSITE FRAME STYLE------------------*/
 
 .websiteFrame {
@@ -386,24 +415,28 @@ form {
     z-index: 1500;
     background-color: #EE924D;
 }
+
 #websiteFrameTop {
     top: 0;
     left: 0;
     width: 100%;
     height: 1rem;
 }
+
 #websiteFrameRight {
     top: 0;
     bottom: 0;
     right: 0;
     width: 1rem;
 }
+
 #websiteFrameBottom {
     bottom: 0;
     left: 0;
     width: 100%;
     height: 1rem;
 }
+
 #websiteFrameLeft {
     top: 0;
     bottom: 0;
@@ -413,15 +446,15 @@ form {
 
 
 /*-----------------RECCOMMENDED FOR YOU-------------------*/
-#recs img{
-    height:110px;
+
+#recs img {
+    height: 110px;
     padding: 0.5rem;
-    
+
 }
 
 
 /*-------------------IMG STYLES------------------*/
-
 
 /*makes images responsive*/
 
@@ -430,20 +463,8 @@ img {
 }
 
 
-/*-------------------MEDIA QUERIES FOR FORMS-------------*/
 
-@media (max-width: 400px) {
-    .form-fields [type=text]{
-        width: 100%;
-         }
-    #ship [type=text]  {
-        width:130%;
-        
-    }
-  } 
-
-
-    /*---------------------------------------MEDIA QUERIES------------------------------------------*/
+/*------------------MEDIA QUERIES------------------*/
 
 /* 
   ##Device = Desktops
@@ -556,6 +577,41 @@ img {
         z-index: 800;
         justify-content: center;
     }
+
+
+
+    /*---------FORMS-------------*/
+    .form-fields [type=text] {
+        width: 25rem;
+    }
+
+    #payment hr {
+        width: 100%;
+    }
+    
+    #payment [type=text]{
+        width: 90%;
+    }
+
+    #billing hr {
+        width: 90%;
+    }
+
+    #billing [type=text] {
+        width: 160%;
+
+    }
+
+    #shipping [type=text] {
+        width: 210%;
+    }
+
+    #shipping hr {
+        width: 230%;
+    }
+
+
+
 }
 
 /* 
@@ -580,4 +636,32 @@ img {
         z-index: 800;
         justify-content: center;
     }
+
+    /*---------FORMS-------------*/
+    .form-fields [type=text] {
+        width: 15rem;
+    }
+
+    #payment hr {
+        width: 100%
+    }
+
+
+    #billing hr {
+        width: 100%
+    }
+
+    #billing [type=text] {
+        width: 110%;
+    }
+
+    #shipping [type=text] {
+        width: 130%;
+    }
+    #shipping hr {
+        width: 160%;
+
+    }
+}
+
 }

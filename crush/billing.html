@@ -29,7 +29,7 @@
             <hr>
         </nav>
     </header>
-     <main>
+    <main>
         <div class="flex-grid-one">
             <h2>Checkout</h2>
         </div>
@@ -51,46 +51,57 @@
         </div>
 
 
-            <div class="flex-grid-two">
-                <div class="col">
-                    <div class="form-fields">
-                        <h5> 2. Billing Information </h5>
-                        <hr>
-                        <form>
-                            <input type="checkbox" name="billing" value="Billing"> Same as my shipping address
-                            <h5>Email</h5><input type="text" name="label">
-                            <h5>First Name</h5><input type="text" name="label">
-                            <h5>Last Name</h5><input type="text" name="label">
-                            <h5>Address Line 1</h5><input type="text" name="label">
-                            <h5>Address Line 2</h5><input type="text" name="label">
-                            <h5>City/Town</h5><input type="text" name="label" class="shorter-label">
-                            <h5>Province</h5><input type="text" name="label" class="shorter-label">
-                            <h5>Postal Code</h5><input type="text" name="label" class="shorter-label">
+        <div class="flex-grid-two">
+            <div class="col">
+                <div class="form-fields" id="billing">
+                    <h5> 2. Billing Information </h5>
+                    <hr>
+                    <form>
+                        <input type="checkbox" name="billing" value="Billing"> Same as my shipping address
+                        <h5>Email</h5><input type="text" name="label">
+                        <h5>First Name</h5><input type="text" name="label">
+                        <h5>Last Name</h5><input type="text" name="label">
+                        <h5>Address Line 1</h5><input type="text" name="label">
+                        <h5>Address Line 2</h5><input type="text" name="label">
+                        <h5>City/Town</h5><input type="text" name="label" class="shorter-label">
+                        <h5>Province</h5><input type="text" name="label" class="shorter-label">
+                        <h5>Postal Code</h5><input type="text" name="label" class="shorter-label">
 
-                        </form>
-                    </div>
-                </div>
-
-
-                <div class="col">
-                    <div class="order">
-                        <h5>Your Order</h5>
-                        <hr>
-                        <h5><a href="product-detail.html">Bergen<div class="price">&dollar;50</div></a></h5>
-                        <h5><a href="product-detail1.html">Humlebaek<div class="price">&dollar;25</div></a></h5>
-                        <hr>
-                        <h5>Subtotal<div class="price">&dollar;75</div></h5>
-                        <h5>Shipping<div class="price">&dollar;10</div></h5>
-                        <h5>Taxes<div class="price">TBD</div></h5>
-                        <hr>
-                        <h5>Total<div class="price">TBD</div></h5>
-                    </div>
+                    </form>
                 </div>
             </div>
 
-        <form action="payment.html">
-            <input type="submit" value="Payment">
-        </form>
+
+            <div class="col">
+                <div class="order">
+                    <h5>Your Order</h5>
+                    <hr>
+                    <h5><a href="product-detail.html">Bergen<div class="price">&dollar;50</div></a></h5>
+                    <h5><a href="product-detail1.html">Humlebaek<div class="price">&dollar;25</div></a></h5>
+                    <hr>
+                    <h5>Subtotal
+                        <div class="price">&dollar;75</div>
+                    </h5>
+                    <h5>Shipping
+                        <div class="price">&dollar;10</div>
+                    </h5>
+                    <h5>Taxes
+                        <div class="price">TBD</div>
+                    </h5>
+                    <hr>
+                    <h5>Total
+                        <div class="price">TBD</div>
+                    </h5>
+                    <form action="payment.html">
+                        <input type="submit" value="Payment">
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+
+
 
     </main>
     <footer>
