@@ -291,6 +291,9 @@ h6 {
 main h1 a:visited {
     color: black;
 }
+main h3 a:visited {
+    color: #EE924D;
+}
 p {
     color: #8C95A6;
     margin-top: 0rem;
