@@ -184,6 +184,10 @@ hr {
     color: gray;
 }
 
+#product-listing img{
+    height: 250px;
+}
+
 img {
     justify-content: center;
     text-align: center;
@@ -216,7 +220,7 @@ li{
     display: block;
     position: relative;
     height: 0;
-    width: 20rem;
+    width: 15rem;
     border: none;
     border-bottom: 0.1rem solid #8C95A6;
 }
@@ -407,14 +411,24 @@ form {
     width: 1rem;
 }
 
+
+/*-----------------RECCOMMENDED FOR YOU-------------------*/
+#recs img{
+    height:110px;
+    padding: 0.5rem;
+    
+}
+
+
 /*-------------------IMG STYLES------------------*/
 
 
 /*makes images responsive*/
 
 img {
-    max-width: 100%
+    max-width: 100%;
 }
+
 
 
 
