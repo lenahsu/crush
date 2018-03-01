@@ -408,8 +408,9 @@ li {
     border-bottom: 0.1rem solid #8C95A6;
     margin-bottom: 2rem;
 }
-form [type=text] {
-    text-align: center;
+form [type=text],
+form textarea {
+    text-align: left;
     letter-spacing: 0.05rem;
     text-transform: uppercase;
     font-size: 0.08rem;
@@ -420,6 +421,11 @@ form [type=text] {
     margin-left: 1rem;
     display: block;
     border: none;
+}
+
+
+form textarea{
+    height: 10rem;
 }
 form h5 {
     color: gray;
@@ -438,6 +444,7 @@ form {
     letter-spacing: 0.05rem;
     text-transform: uppercase;
     font-size: 0.08rem;
+    
 }
 
 /*--Buttons--*/
@@ -673,7 +680,7 @@ img {
         justify-content: center;
     }
     /*---------FORMS-------------*/
-    .form-fields [type=text] {
+    .form-fields [type=text],form textarea{
         width: 25rem;
     }
     #payment hr {
@@ -719,7 +726,7 @@ img {
         justify-content: center;
     }
     /*---------FORMS-------------*/
-    .form-fields [type=text] {
+    .form-fields [type=text], form textarea{
         width: 15rem;
     }
     #payment hr {
