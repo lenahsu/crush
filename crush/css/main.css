@@ -116,6 +116,8 @@ h3 {
     color: #EE924D;
     font-weight: 400;
     font-size: 2rem;
+    width: 60%;
+        line-height:2.5rem;
 }
 h4 {
     text-transform: lowercase;
@@ -147,10 +149,17 @@ p {
     letter-spacing:0.04rem;
     text-transform: none;
 }
-.bio {
+.descr {
     text-align: left;
     line-height: normal;
-    width:70%;
+    width:90%;
+}
+
+.bio{
+    text-align:left;
+    line-height: normal;
+    width: 50%
+    
 }
 hr {
     display: block;
