@@ -136,7 +136,6 @@ nav hr {
     right: 0;
     top: 0;
 }
-
 .main-menu:target,
 .main-menu[aria-expanded="true"] {
     left: 0;
@@ -154,7 +153,6 @@ nav hr {
     position: relative;
     z-index: 1000;
 }
-
 .main-menu:target + .backdrop,
 .main-menu[aria-expanded="true"] + .backdrop {
     position: absolute;
@@ -196,7 +194,7 @@ nav hr {
     }
     .main-menu ul {
         display: flex;
-                justify-content: center;
+        justify-content: center;
         /* Undo off-canvas styling */
         padding: 0;
         -webkit-box-shadow: none;
@@ -255,7 +253,7 @@ h3 {
     font-weight: 400;
     font-size: 2rem;
     width: 60%;
-        line-height:2.5rem;
+    line-height: 2.5rem;
 }
 h4 {
     text-transform: lowercase;
@@ -270,12 +268,13 @@ h5 {
     margin-bottom: 0;
 }
 h6 {
-    
     color: black;
     font-size: 0.8rem;
     line-height: 1.2rem;
     letter-spacing: 0.03rem;
-    
+}
+h1 a:visited {
+    color: black;
 }
 p {
     color: #8C95A6;
@@ -284,20 +283,18 @@ p {
     text-align: center;
     font-size: 0.8rem;
     width: 100%;
-    letter-spacing:0.04rem;
+    letter-spacing: 0.04rem;
     text-transform: none;
 }
 .descr {
     text-align: left;
     line-height: normal;
-    width:90%;
+    width: 90%;
 }
-
-.bio{
-    text-align:left;
+.bio {
+    text-align: left;
     line-height: normal;
     width: 50%
-    
 }
 hr {
     display: block;
@@ -321,11 +318,9 @@ hr {
     text-decoration: underline;
     color: gray;
 }
-
-#product-listing img{
+#product-listing img {
     height: 250px;
 }
-
 img {
     justify-content: center;
     text-align: center;
@@ -338,8 +333,7 @@ ul {
     list-style: none;
     line-height: 1.5rem;
 }
-
-li{
+li {
     display: inline;
     padding-right: 0.3rem;
     padding-left: 0.3rem;
@@ -362,15 +356,13 @@ li{
     border: none;
     border-bottom: 0.1rem solid #8C95A6;
 }
-
-.order a:link, .order a:visited{
-    color:black;
-    text-decoration:none;
-    
+.order a:link,
+.order a:visited {
+    color: black;
+    text-decoration: none;
 }
-
-.order a:hover, 
-.order a:active{
+.order a:hover,
+.order a:active {
     color: black;
     text-decoration: underline;
 }
@@ -398,7 +390,6 @@ li{
 
 /*----------FORMS---------------*/
 
-
 .form-fields {
     float: left;
 }
@@ -425,25 +416,19 @@ form [type=text] {
     display: block;
     border: none;
 }
-
-form h5{
+form h5 {
     color: gray;
-    padding-left:1rem;
+    padding-left: 1rem;
 }
-
-form .shorter-label{
+form .shorter-label {
     width: 12rem;
-    
 }
-
-.review{
-    padding-left:1rem;
+.review {
+    padding-left: 1rem;
 }
-
-.reccommended{
-    padding-top:4rem;
+.reccommended {
+    padding-top: 4rem;
 }
-
 form {
     letter-spacing: 0.05rem;
     text-transform: uppercase;
@@ -476,47 +461,39 @@ form {
     margin: 1rem;
 }
 
-
-
-
-
 /*--------CART STYLE-----------*/
+
 [type=number] {
     width: 2rem;
     height: 2rem;
     font-size: 0.8rem;
     text-align: center;
 }
-
-.product-info{
-    line-height:0.5rem;
-    margin-bottom:3rem;
+.product-info {
+    line-height: 0.5rem;
+    margin-bottom: 3rem;
 }
-
-.product-info h4{
+.product-info h4 {
     padding-bottom: 2rem;
 }
-
-.product-info h5{
+.product-info h5 {
     line-height: 0.5rem
 }
-
-.product-info form{
-    margin-top:0.5rem;
+.product-info form {
+    margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
-
-.product-info a:link, 
-.product-info a:visited{
+.product-info a:link,
+.product-info a:visited {
     text-decoration: none;
-    color:black;
+    color: black;
+}
+.product-info a:hover,
+.product-info a:active {
+    text-decoration: underline;
+    color: black;
 }
 
-.product-info a:hover, 
-.product-info a:active{
-    text-decoration: underline;
-    color:black;
-}
 /*-------------------WEBSITE FRAME STYLE------------------*/
 
 .websiteFrame {
@@ -549,14 +526,12 @@ form {
     width: 1rem;
 }
 
-
 /*-----------------RECCOMMENDED FOR YOU-------------------*/
-#recs img{
-    height:110px;
-    padding: 0.5rem;
-    
-}
 
+#recs img {
+    height: 110px;
+    padding: 0.5rem;
+}
 
 /*-------------------IMG STYLES------------------*/
 
@@ -567,21 +542,19 @@ img {
     max-width: 100%;
 }
 
-
 /*-------------------MEDIA QUERIES FOR FORMS-------------*/
 
 @media (max-width: 400px) {
-    .form-fields [type=text]{
+    .form-fields [type=text] {
         width: 100%;
-         }
-    #ship [type=text]  {
-        width:130%;
-        
     }
-  } 
+    #ship [type=text] {
+        width: 130%;
+    }
+}
 
+/*---------------------------------------MEDIA QUERIES------------------------------------------*/
 
-    /*---------------------------------------MEDIA QUERIES------------------------------------------*/
 
 /* 
   ##Device = Desktops
